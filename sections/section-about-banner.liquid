@@ -1,0 +1,55 @@
+{{ "section-about-banner.css" | asset_url | stylesheet_tag }}
+
+<section
+  class="AboutBanner"
+  data-flex
+>
+  <div class="AboutBanner__TextWrapper" data-flex>
+    <h2 class="AboutBanner__Title Font__White">
+      {{ section.settings.AboutBanner__Title }}
+    </h2>
+    <a href="{{ section.settings.AboutBanner__Link }}" class="AboutBanner__Link Font__White" data-flex>
+      {{ section.settings.AboutBanner__LinkTitle }}
+      <span class="AboutBanner__Btn">
+        <img src="https://cdn.shopify.com/s/files/1/0725/6136/1209/files/arrow.png?v=1712330207" width="3.8" height="5.9">
+      </span>
+    </a>
+  </div>
+  <div class="AboutBanner__ImageWrapper">
+    <img src="{{ section.settings.AboutBanner__Image |  img_url: 'master' }}" alt="AboutBanner" width="1355.3" height="450">
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "aboutバナー",
+  "settings": [
+      {
+        "type": "textarea",
+        "id": "AboutBanner__Title",
+        "label": "セクションタイトル"
+      },
+      {
+        "type": "text",
+        "id": "AboutBanner__Link",
+        "label": "ボタンテキスト",
+        "default": "Read More"
+      },
+      {
+        "type": "url",
+        "id": "AboutBanner__Link",
+        "label": "遷移先URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "AboutBanner__Image",
+        "label": "バナー画像"
+      }
+    ],
+    "presets": [
+      {
+        "name": "aboutバナー"
+      }
+    ]
+}
+{% endschema %}
