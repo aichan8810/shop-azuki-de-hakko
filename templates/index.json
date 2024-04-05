@@ -35,9 +35,72 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "section_about_banner_CU6b9f": {
+      "type": "section-about-banner",
+      "settings": {
+        "AboutBanner__Title": "AZUKI\nde\nHAKKO\nの想い",
+        "AboutBanner__LinkTitle": "Read More",
+        "AboutBanner__Link": "shopify:\/\/collections",
+        "AboutBanner__Image": "shopify:\/\/shop_images\/aboutBanner.png"
+      }
+    },
+    "section_column_list_gHU34g": {
+      "type": "section-column-list",
+      "blocks": {
+        "collection_YfLrGU": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "apparel"
+          }
+        },
+        "collection_fpbPcN": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "apparel"
+          }
+        },
+        "collection_GBfmBj": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "apparel"
+          }
+        },
+        "collection_gbpfE4": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "apparel"
+          }
+        },
+        "collection_8m3cfL": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "cafe-items"
+          }
+        },
+        "collection_KJiLLR": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "新作商品"
+          }
+        }
+      },
+      "block_order": [
+        "collection_YfLrGU",
+        "collection_fpbPcN",
+        "collection_GBfmBj",
+        "collection_gbpfE4",
+        "collection_8m3cfL",
+        "collection_KJiLLR"
+      ],
+      "settings": {
+        "ColumnList__Title": "Category"
+      }
     }
   },
   "order": [
-    "section_slideshow_dViGjt"
+    "section_slideshow_dViGjt",
+    "section_about_banner_CU6b9f",
+    "section_column_list_gHU34g"
   ]
 }
