@@ -3442,3 +3442,12 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+/* custom css */
+[data-flex]{
+  display: flex;
+  flex-wrap: row wrap;
+}
+.Font__White{
+  color: white;
+}

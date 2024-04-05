@@ -1,0 +1,33 @@
+.AboutBanner{
+  width: 100vw;
+  align-items: center;
+  flex-direction: row;
+}
+
+.AboutBanner__TextWrapper{
+  width: fit-content;
+  padding: 9.5rem 21rem;
+  background: #9E0810;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+}
+
+.AboutBanner__Title{
+  font-size: 2.78rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.AboutBanner__Link{
+  font-size: 1.25rem;
+  gap: 9px;
+}
+
+.AboutBanner__Btn{
+  width: 23px;
+  height: 23px;
+  border-radius: 9999px;
+  border: 1px solid #fff;
+}
