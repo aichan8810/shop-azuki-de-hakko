@@ -1,0 +1,62 @@
+{{ "section-column-list.css" | asset_url |  stylesheet_tag }}
+
+<section class="ColumnList" data-flex>
+  <h2 class="ColumnList__Title">
+    {{ section.settings.ColumnList__Title }}
+  </h2>
+  <ul class="ColumnList__ColumnContainer" data-grid>
+    {% for block in section.blocks %}
+      <li class="ColumnList__Content">
+        {% case block.type %}
+        {% when "collection" %}
+          {% assign collection = collections[block.settings.ColumnList__CollectionContents] %}
+          <a href="{{ collection.url }}">
+            <img src="{{ collection.featured_image | img_url: 'master' }}" alt="{{ collection.title }}" width="" height="">
+            <p class="ColumnList__ContentText">
+              {{ collection.title }}
+            </p>
+          </a>
+      {% endcase %}
+
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% schema %}
+{
+  "name": "カラムリスト",
+  "settings": [
+      {
+        "type": "text",
+        "id": "ColumnList__Title",
+        "label": "セクションタイトル",
+        "default": "Category"
+      },
+      {
+        "type": "number",
+        "label": "掲載するカラム数",
+        "id": "ColumnList__Length"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "コレクションコンテンツ",
+        "type": "collection",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "collection",
+            "id": "ColumnList__CollectionContents",
+            "label": "表示するコレクション"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "カラムリスト"
+      }
+    ]
+}
+{% endschema %}

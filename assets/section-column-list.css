@@ -1,0 +1,46 @@
+p{
+  margin: 0;
+  line-height: 1.0;
+}
+.ColumnList{
+  padding: 7.8rem 0 8.4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #D7B59D;
+  gap: 6.7rem;
+}
+
+.ColumnList__ColumnContainer{
+  max-width: 1480px;
+  margin: 0 auto;
+  width: 77.083vw;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.ColumnList__Content, .ColumnList__Content > a{
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.ColumnList__Content > a > img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ColumnList__Title{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ColumnList__ContentText{
+  font-size: 18px;
+  font-weight: bold;
+}

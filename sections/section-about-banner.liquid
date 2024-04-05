@@ -6,17 +6,17 @@
 >
   <div class="AboutBanner__TextWrapper" data-flex>
     <h2 class="AboutBanner__Title Font__White">
-      {{ section.settings.AboutBanner__Title }}
+      {{ section.settings.AboutBanner__Title |  newline_to_br }}
     </h2>
     <a href="{{ section.settings.AboutBanner__Link }}" class="AboutBanner__Link Font__White" data-flex>
       {{ section.settings.AboutBanner__LinkTitle }}
       <span class="AboutBanner__Btn">
-        <img src="https://cdn.shopify.com/s/files/1/0725/6136/1209/files/arrow.png?v=1712330207" width="3.8" height="5.9">
+        <img src="https://cdn.shopify.com/s/files/1/0725/6136/1209/files/arrow.png" width="3.8" height="5.9">
       </span>
     </a>
   </div>
   <div class="AboutBanner__ImageWrapper">
-    <img src="{{ section.settings.AboutBanner__Image |  img_url: 'master' }}" alt="AboutBanner" width="1355.3" height="450">
+    <img src="{{ section.settings.AboutBanner__Image |  img_url: 'master' }}" alt="AboutBanner" width="" height="">
   </div>
 </section>
 
@@ -31,7 +31,7 @@
       },
       {
         "type": "text",
-        "id": "AboutBanner__Link",
+        "id": "AboutBanner__LinkTitle",
         "label": "ボタンテキスト",
         "default": "Read More"
       },

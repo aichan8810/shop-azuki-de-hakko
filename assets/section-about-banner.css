@@ -2,11 +2,12 @@
   width: 100vw;
   align-items: center;
   flex-direction: row;
+  height: 450px;
 }
 
 .AboutBanner__TextWrapper{
-  width: fit-content;
-  padding: 9.5rem 21rem;
+  width: 29.412vw;
+  height: 100%;
   background: #9E0810;
   flex-direction: column;
   align-items: center;
@@ -30,4 +31,23 @@
   height: 23px;
   border-radius: 9999px;
   border: 1px solid #fff;
+}
+
+.AboutBanner__ImageWrapper{
+  width: calc(100% - 29.412vw);
+  height: 100%;
+  overflow: hidden;
+}
+
+.AboutBanner__ImageWrapper > img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AboutBanner__Btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
