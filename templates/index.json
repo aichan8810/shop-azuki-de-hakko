@@ -73,9 +73,9 @@
     "section_news_list_rdVQTm": {
       "type": "section-news-list",
       "settings": {
-        "NewsList__Title": "",
-        "SelectBlog": "",
-        "NewsList__MoreBtn": ""
+        "NewsList__Title": "NEWS",
+        "SelectBlog": "columns",
+        "NewsList__MoreBtn": "NEWS ALL"
       }
     },
     "section_mail_magazine_Nid3Yy": {
