@@ -70,6 +70,14 @@
         "ColumnList__Title": "Category"
       }
     },
+    "section_news_list_rdVQTm": {
+      "type": "section-news-list",
+      "settings": {
+        "NewsList__Title": "",
+        "SelectBlog": "",
+        "NewsList__MoreBtn": ""
+      }
+    },
     "section_mail_magazine_Nid3Yy": {
       "type": "section-mail-magazine",
       "settings": {
@@ -80,6 +88,7 @@
     "section_main_visual_pg3qPV",
     "section_about_banner_CU6b9f",
     "section_column_list_gHU34g",
+    "section_news_list_rdVQTm",
     "section_mail_magazine_Nid3Yy"
   ]
 }
