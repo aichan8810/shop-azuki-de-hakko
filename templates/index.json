@@ -1,39 +1,12 @@
 {
   "sections": {
-    "section_slideshow_dViGjt": {
-      "type": "section-slideshow",
-      "blocks": {
-        "slide_KzK3ag": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/8.png",
-            "heading": "小豆でひらく、発酵新分野。\nすべての人に小豆の力を。\n「AZUKI de HAKKO」",
-            "heading_size": "h2",
-            "subheading": "135年間小豆と米麹を\n扱い続けてきた「越山甘清堂」が、\n独自製法で小豆を醸したら、\n全く新しい発酵新分野が誕生しました。\n\n小豆麹の力を様々なカタチへと\n展開するブランドが「Azuki de Hakko」です。\n無添加なのに、さらに美味しく、もっと健康に。\n発酵の新世界へ、ようこそ。",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_KzK3ag"
-      ],
+    "section_main_visual_pg3qPV": {
+      "type": "section-main-visual",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "MainVisual__Title": "小豆でひらく、発酵新分野。\nすべての人に小豆の力を。\n「AZUKI de HAKKO」",
+        "MainVisual__Text": "135年間小豆と米麹を\n扱い続けてきた「越山甘清堂」が、\n独自製法で小豆を醸したら、\n全く新しい発酵新分野が誕生しました。\n\n小豆麹の力を様々なカタチへと\n展開するブランドが「Azuki de Hakko」です。\n無添加なのに、さらに美味しく、もっと健康に。\n発酵の新世界へ、ようこそ。",
+        "MainVisual__Image": "shopify:\/\/shop_images\/8.png",
+        "MainVisual__Image--SP": "shopify:\/\/shop_images\/8.png"
       }
     },
     "section_about_banner_CU6b9f": {
@@ -99,7 +72,7 @@
     }
   },
   "order": [
-    "section_slideshow_dViGjt",
+    "section_main_visual_pg3qPV",
     "section_about_banner_CU6b9f",
     "section_column_list_gHU34g"
   ]
