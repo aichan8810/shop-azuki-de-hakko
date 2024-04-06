@@ -24,37 +24,37 @@
         "collection_YfLrGU": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "apparel"
+            "ColumnList__CollectionContents": "ようかん"
           }
         },
         "collection_fpbPcN": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "apparel"
+            "ColumnList__CollectionContents": "アンスフレッド"
           }
         },
         "collection_GBfmBj": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "apparel"
+            "ColumnList__CollectionContents": "グラノーラ"
           }
         },
         "collection_gbpfE4": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "apparel"
+            "ColumnList__CollectionContents": "和菓子"
           }
         },
         "collection_8m3cfL": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "cafe-items"
+            "ColumnList__CollectionContents": "飲料"
           }
         },
         "collection_KJiLLR": {
           "type": "collection",
           "settings": {
-            "ColumnList__CollectionContents": "新作商品"
+            "ColumnList__CollectionContents": "ギフト"
           }
         }
       },
