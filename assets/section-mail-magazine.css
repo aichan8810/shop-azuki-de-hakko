@@ -1,0 +1,87 @@
+p{
+  margin: 0;
+}
+
+.MailMagazine{
+  background: #EEEEEE;
+  place-content: center;
+  padding: 65px 0;
+}
+
+.MailMagazine__Title{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.MailMagazine__Text{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.MailMagazine__Container{
+  max-width: 840px;
+  padding: 6rem 60px 5rem;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  border-radius: 20px;
+}
+
+.MailMagazine__FormWrapper{
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.MailMagazine__Form{
+  max-width: 480px;
+  width: calc(100% - 220px);
+  border: none;
+  display: flex;
+  align-items: center;
+  background: #EEEEEE;
+  height: 58px;
+  padding-left: 2.3rem;
+}
+
+.field{
+  width: 100%;
+  border: none;
+}
+
+.MailMagazine__FormBtn{
+  background: #9E0810;
+  color: white;
+  position: static;
+  width: 220px;
+  border-radius: 50px;
+  border: none;
+  appearance: none;
+  height: 58px;
+  font-size: 14px;
+  letter-spacing: 1.5em;
+  text-indent: 1.5em;
+  cursor: pointer;
+}
+
+.MailMagazine__Form::placeholder{
+  font-size: 14px;
+}
+
+
+
+.MailMagazine__FormContainer{
+  width: 100%;
+  max-width: none;
+  display: flex;
+  border: none;
+}
+
+.MailMagazine__CautionText{
+  font-size: 12px;
+  font-weight: 400;
+}

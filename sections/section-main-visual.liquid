@@ -1,0 +1,49 @@
+{{ "section-main-visual.css" | asset_url | stylesheet_tag }}
+
+<section class="MainVisual">
+  <picture class="MainVisual__ImageWrapper">
+    <source media="(min-width: 990px)" srcset="{{ section.settings.MainVisual__Image | img_url: 'master' }}">
+    <img src="{{ section.settings.MainVisual__Image--SP | img_url: 'master' }}" alt="" width="" height="">
+  </picture>
+  <div class="Mainvisual__TextContainer">
+    <h1 class="MainVisual__Title">
+      {{ section.settings.MainVisual__Title | newline_to_br }}
+    </h1>
+    <p>
+      {{ section.settings.MainVisual__Text | newline_to_br }}
+    </p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "メインビジュアル",
+  "settings": [
+      {
+        "type": "textarea",
+        "id": "MainVisual__Title",
+        "label": "タイトルテキスト"
+      },
+      {
+        "type": "textarea",
+        "id": "MainVisual__Text",
+        "label": "説明文テキスト"
+      },
+      {
+        "type": "image_picker",
+        "id": "MainVisual__Image",
+        "label": "PC用画像"
+      },
+      {
+        "type": "image_picker",
+        "id": "MainVisual__Image--SP",
+        "label": "SP用画像"
+      }
+    ],
+  "presets": [
+    {
+      "name": "メインビジュアル"
+    }
+  ]
+}
+{% endschema %}

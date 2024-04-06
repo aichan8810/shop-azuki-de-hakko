@@ -3466,3 +3466,28 @@ ul{
   margin: 0;
   padding: 0;
 }
+
+.MoreCircle{
+  display: flex;
+  width: 33.92px;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 99px;
+}
+.MoreCircle::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 3px;
+  left: 0;
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #808080;
+	border-right: 1px solid #808080;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+}

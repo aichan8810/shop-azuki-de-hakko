@@ -1,0 +1,43 @@
+{{ "section-mail-magazine.css" | asset_url | stylesheet_tag }}
+<section class="MailMagazine" data-grid>
+  <div class="MailMagazine__Container" data-flex>
+    <h2 class="MailMagazine__Title">
+      MAIL MAGAZINE
+    </h2>
+    <p class="MailMagazine__Text">
+      AZUKI de HAKKOからのお得な情報や限定商品のお知らせをお届けいたします。
+    </p>
+    {% form 'customer', class: "MailMagazine__FormWrapper" %}
+
+      {{ form.errors | default_errors }}
+
+      {% if form.posted_successfully? %}
+        <p>ご登録いただきありがとうございます。</p>
+      {% else %}
+        <input type="hidden" name="contact[tags]" value="prospect, password page">
+        <input type="email" name="contact[email]" id="email" placeholder="メールアドレス" class="MailMagazine__Form">
+        <button class="MailMagazine__FormBtn">
+          登録
+        </button>
+      {% endif %}
+
+    {% endform %}
+    <p class="MailMagazine__CautionText">
+      登録が完了した時点で、プライバシーポリシーに同意したものとみなします。<br>携帯キャリアのメールアドレス（@docomo.ne.jp / @ezweb.ne.jp / @au.com / @softbank.ne.jp等）の登録は、弊社からのメールが届かない可能性があるため、非推奨です。
+    </p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "メルマガフォーム",
+  "settings": [
+
+    ],
+    "presets": [
+      {
+        "name": "メルマガフォーム"
+      }
+    ]
+}
+{% endschema %}

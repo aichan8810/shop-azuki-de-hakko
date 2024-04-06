@@ -1,0 +1,54 @@
+{{ "section-news-list.css" | asset_url | stylesheet_tag }}
+
+{% assign blogs = blogs[ 'columns' ] %}
+<section class="NewsList" data-flex>
+  <h2 class="NewsList__Title">
+    {{ section.settings.NewsList__Title }}
+  </h2>
+  <ul class="NewsList__Container" data-flex>
+    {% for article in blogs.articles limit: 3 %}
+        <li class="NewsList__Content" >
+          <a href="{{ article.url }}" data-flex>
+            <span class="NewsList__Date">
+              {{ article.published_at |  date: "%Y.%m.%d" }}
+            </span>
+            <p class="NewsList__Heading">
+              {{ article.title }}
+            </p>
+          </a>
+        </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ blogs.url }}" class="NewsList__MoreBtn" data-flex>
+    {{ section.settings.NewsList__MoreBtn }}
+    <span class="MoreCircle"></span>
+  </a>
+</section>
+
+{% schema %}
+{
+  "name": "おしらせ",
+  "settings": [
+      {
+        "type": "text",
+        "id": "NewsList__Title",
+        "label": "セクションタイトル"
+      },
+      {
+        "type": "blog",
+        "id": "SelectBlog",
+        "label": "表示するコンテンツ"
+      },
+      {
+        "type": "text",
+        "id": "NewsList__MoreBtn",
+        "label": "ボタンテキスト"
+      }
+    ],
+    "presets": [
+      {
+        "name": "お知らせ"
+      }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+p{
+  margin: 0;
+}
+.MainVisual{
+  position: relative;
+  width: 100vw;
+  aspect-ratio: 	96/49;
+}
+
+.MainVisual__ImageWrapper{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  z-index: -1;
+}
+
+.Mainvisual__TextContainer{
+  max-width: 396px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 4.688vw;
+  left: 4.688vw;
+  gap: 3.125vw;
+}
+
+.MainVisual__Title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.MainVisual__Text{
+  font-size: 18px;
+  font-weight: 500;
+}
