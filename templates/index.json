@@ -69,11 +69,17 @@
       "settings": {
         "ColumnList__Title": "Category"
       }
+    },
+    "section_mail_magazine_Nid3Yy": {
+      "type": "section-mail-magazine",
+      "settings": {
+      }
     }
   },
   "order": [
     "section_main_visual_pg3qPV",
     "section_about_banner_CU6b9f",
-    "section_column_list_gHU34g"
+    "section_column_list_gHU34g",
+    "section_mail_magazine_Nid3Yy"
   ]
 }
