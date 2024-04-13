@@ -16,11 +16,27 @@
             "Slider__ContentImage": "shopify:\/\/shop_images\/mv_2.jpg",
             "Slider__ContentLink": ""
           }
+        },
+        "text_KjgY8p": {
+          "type": "text",
+          "settings": {
+            "Slider__ContentImage": "shopify:\/\/shop_images\/mv_3.jpg",
+            "Slider__ContentLink": ""
+          }
+        },
+        "text_URQqdi": {
+          "type": "text",
+          "settings": {
+            "Slider__ContentImage": "shopify:\/\/shop_images\/mv_4.jpg",
+            "Slider__ContentLink": ""
+          }
         }
       },
       "block_order": [
         "text_Agn3zJ",
-        "text_T4aG4E"
+        "text_T4aG4E",
+        "text_KjgY8p",
+        "text_URQqdi"
       ],
       "settings": {
         "MainVisual__Title": "小豆でひらく、発酵新分野。\nすべての人に小豆の力を。\n「AZUKI de HAKKO」",
