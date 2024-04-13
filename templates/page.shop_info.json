@@ -14,10 +14,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "section_mail_magazine_c9paaa": {
+      "type": "section-mail-magazine",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "page_shop_info_B9iM6L"
+    "page_shop_info_B9iM6L",
+    "section_mail_magazine_c9paaa"
   ]
 }
