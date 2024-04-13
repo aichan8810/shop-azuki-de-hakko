@@ -74,7 +74,7 @@
       "type": "section-news-list",
       "settings": {
         "NewsList__Title": "NEWS",
-        "SelectBlog": "columns",
+        "SelectBlog": "news",
         "NewsList__MoreBtn": "NEWS ALL"
       }
     },
