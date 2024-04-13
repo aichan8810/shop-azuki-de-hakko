@@ -1,5 +1,14 @@
-<section>
-  <div class="section-pageInnerWidth" data-flex="column">
+<style>
+  .ShopInfo{
+    background-color: #D7B59D;
+  }
+  .ShopInfo__Container{
+    background: #fff;
+    padding: 7.5rem 0;
+  }
+</style>
+<section class="ShopInfo">
+  <div class="section-pageInnerWidth ShopInfo__Container" data-flex="column">
     {% for value in shop.metaobjects.shop_factory.values %}
       <h2>
         {{ value.shop_name }}
