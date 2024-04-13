@@ -1,6 +1,6 @@
 {{ "section-news-list.css" | asset_url | stylesheet_tag }}
 
-{% assign blogs = blogs[ 'columns' ] %}
+{% assign blogs = blogs[ section.settings.SelectBlog ] %}
 <section class="NewsList" data-flex>
   <h2 class="NewsList__Title">
     {{ section.settings.NewsList__Title }}
