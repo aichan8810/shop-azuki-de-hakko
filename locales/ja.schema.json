@@ -3358,18 +3358,17 @@
         "name": "迅速な注文リスト"
       }
     },
-    "Slider":{
+    "Slider": {
       "name": "メインビジュアル",
-      "settings":{
-
+      "settings": {
       },
-      "blocks":{
+      "blocks": {
         "name": "スライダー画像",
-        "settings":{
-          "Slider__ContentImage":{
+        "settings": {
+          "Slider__ContentImage": {
             "label": "スライダー画像を追加"
           },
-          "Slider__ContentLink":{
+          "Slider__ContentLink": {
             "label": "遷移先URLを追加"
           }
         }
