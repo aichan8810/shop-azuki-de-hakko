@@ -1,0 +1,13 @@
+<section>
+  <div class="section-pageInnerWidth" data-flex="column">
+    {% for value in shop.metaobjects.shop_factory.values %}
+      <h2>
+        {{ value.shop_name }}
+      </h2>
+      <hr>
+      <p>
+        {{ value.information | newline_to_br }}
+      </p>
+    {% endfor %}
+  </div>
+</section>
