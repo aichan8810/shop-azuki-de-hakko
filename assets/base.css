@@ -3501,3 +3501,25 @@ ul{
 	transform: rotate(45deg);
 
 }
+
+.shopify-policy__container{
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  padding: clamp(40px, 5.208vw, 100px);
+}
+.content-policies{
+  background: #d7b59d;
+}
+.Pages__Title{
+  font-size: 14px;
+  font-weight: 700;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-for-layout{
+  background: #d7b59d;
+}

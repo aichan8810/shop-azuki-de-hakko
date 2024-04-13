@@ -301,7 +301,17 @@
 
     {% sections 'header-group' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+  <main id="MainContent" class="content-for-layout focus-none {% if request.path contains 'policies' %} content-policies {% endif %}" role="main" tabindex="-1">
+    {% assign path = request.path %}
+    {% if path contains '/policies/privacy-policy' %}
+      <h1 class="Pages__Title">Privacy policy</h1>
+    {% elsif path contains '/policies/terms-of-service' %}
+      <h1 class="Pages__Title">Terms of service</h1>
+    {% elsif page.title contains "店舗情報" %}
+      <h1 class="Pages__Title">{{ page.title }}</h1>
+
+
+  {% endif %}
       {{ content_for_layout }}
     </main>
 
