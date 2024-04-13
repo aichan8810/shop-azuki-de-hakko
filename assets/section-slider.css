@@ -1,0 +1,86 @@
+.Slider {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 96 / 49;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* 正の値に変更しました */
+}
+
+.Slider__ContentWrapper {
+  width: 100%;
+  height: 100%;
+}
+.top{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+.Slider__Content{
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.Slider__Content > img{
+  object-fit: cover;
+  width: 100%;
+}
+.Slider__Padding{
+  display: flex !important;
+  width: 100vw;
+  aspect-ratio: 96 / 49;
+  position: relative;
+  height: auto;
+  z-index: 2;
+}
+
+p{
+  margin: 0;
+}
+.Mainvisual__TextContainer{
+  max-width: 396px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 4.688vw;
+  left: 4.688vw;
+  gap: 3.125vw;
+}
+
+.MainVisual__Title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.MainVisual__Text{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Slider__Text--PC{
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media(max-width:767px){
+  .Slider__Text--PC{
+    display: none;
+  }
+  .Slider, .Slider__Padding,.Slider__Content{
+    aspect-ratio: 215/431;
+  }
+  .Slider__Content > img{
+    height: 100%;
+    width: auto;
+  }
+  .Mainvisual__TextContainer{
+    top: 17.442vw;
+    left: 7.907vw;
+    bottom: unset;
+  }
+}

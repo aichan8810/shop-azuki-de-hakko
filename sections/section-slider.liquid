@@ -1,10 +1,27 @@
+{{"section-slider.css" |  asset_url | stylesheet_tag}}
+{{ "slider-motion.js" | asset_url | script_tag }}
+<section class="Slider__Padding">
+  <div class="Mainvisual__TextContainer">
+    <h1 class="MainVisual__Title">
+      {{ section.settings.MainVisual__Title | newline_to_br }}
+    </h1>
+    <p class="Slider__Text--PC">
+      {{ section.settings.MainVisual__Text | newline_to_br }}
+    </p>
+  </div>
+</section>
+
 <section class="Slider">
   <div class="Slider__ContentWrapper">
     {% for block in section.blocks %}
       <div class="Slider__Content">
-        <a href="{{ block.settings.Slider__ContentLink }}">
+        {% if block.settings.Slider__ContentLink %}
+          <a href="{{ block.settings.Slider__ContentLink }}">
+            <img src="{{ block.settings.Slider__ContentImage | img_url: 'master' }}" alt="スライダー画像">
+          </a>
+        {% else %}
           <img src="{{ block.settings.Slider__ContentImage | img_url: 'master' }}" alt="スライダー画像">
-        </a>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
@@ -16,6 +33,11 @@
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
     slidesToShow: 1,//スライドを画面に3枚見せる
     slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+    centerMode: true,
+    centerPadding: "0px",
+    arrows: false,
+    fade: true,
+    speed: 200
   });
 {% endjavascript %}
 
@@ -24,11 +46,20 @@
   "name": "メインビジュアル",
   "presets": [
     {
-      "name": "メインビジュアル"
+      "name": "メインビジュアル_slider"
     }
   ],
   "settings": [
-
+    {
+        "type": "textarea",
+        "id": "MainVisual__Title",
+        "label": "タイトルテキスト"
+      },
+      {
+        "type": "textarea",
+        "id": "MainVisual__Text",
+        "label": "説明文テキスト"
+      }
     ],
   "blocks": [
     {

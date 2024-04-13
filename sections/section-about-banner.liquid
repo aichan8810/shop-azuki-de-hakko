@@ -8,6 +8,9 @@
     <h2 class="AboutBanner__Title Font__White">
       {{ section.settings.AboutBanner__Title |  newline_to_br }}
     </h2>
+    <p class="AboutBanner__Text">
+      {{ section.settings.AboutBanner__Text | newline_to_br }}
+    </p>
     <a href="{{ section.settings.AboutBanner__Link }}" class="AboutBanner__Link Font__White" data-flex>
       {{ section.settings.AboutBanner__LinkTitle }}
       <span class="AboutBanner__Btn">
@@ -34,6 +37,11 @@
         "id": "AboutBanner__LinkTitle",
         "label": "ボタンテキスト",
         "default": "Read More"
+      },
+      {
+        "type": "textarea",
+        "id": "AboutBanner__Text",
+        "label": "説明文テキスト"
       },
       {
         "type": "url",
