@@ -52,6 +52,7 @@
   width: clamp(41.667vw,41.667vw,800px) !important;
   display: flex;
   aspect-ratio: 20/13;
+  height: fit-content;
 }
 
 .PageMainContent__FlexImgWrapper > img{

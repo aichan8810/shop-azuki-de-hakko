@@ -67,7 +67,7 @@ p{
   line-height: 1.8;
 }
 
-@media(max-width:767px){
+@media(max-width:990px){
   .Slider__Text--PC{
     display: none;
   }
