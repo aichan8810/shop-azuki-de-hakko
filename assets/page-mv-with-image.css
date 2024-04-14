@@ -2,12 +2,19 @@
   width: 100vw;
   aspect-ratio: 32/15;
   margin: 0;
+  min-height: 580px;
 }
 
 .MvWithImg__Title{
   font-size: 19.62px;
   font-weight: 700;
-  padding-top: 200px;
+  padding-top: 10.417vh;
   margin: 0;
   text-align: center;
+}
+
+@media(max-width: 990px){
+  .MvWithImg{
+    min-height: 448px;
+  }
 }

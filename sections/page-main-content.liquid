@@ -7,6 +7,11 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  @media(max-width: 990px){
+    .PageMainContent{
+      margin-top: {{ section.settings.PageMainContent__Margin--sp }}px;
+    }
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -41,9 +46,54 @@
           </div>
       {% when "image_picker" %}
         <div class="PageMainContent__ImageContainer section-{{ section.id }}-padding" data-flex>
-          <img src="{{ block.settings.PageMainContent__Img | img_url: 'master' }}">
+          <picture>
+            <source media="(max-width:990px)" srcset="{{ block.settings.PageMainContent__Img--sp | img_url: 'master' }}">
+            <img src="{{ block.settings.PageMainContent__Img | img_url: 'master' }}">
+          </picture>
         </div>
-
+      {% when "textarea" %}
+        <div class="PageMainContent__InterviewContainer" aria-details="column">
+          <div class="PageMainContent__TitleWrapper section-{{ section.id }}-padding" data-flex="column">
+            {% if block.settings.PageMainContent__InterviewSubTitle %}
+              <span class="PageMainContent__SubTitle">
+                {{ block.settings.PageMainContent__InterviewSubTitle }}
+              </span>
+            {% endif %}
+            <h2 class="PageMainContent__SectionTitle">
+              {{ block.settings.PageMainContent__InterviewTitle | newline_to_br }}
+            </h2>
+          </div>
+          <div class="PageMainContent__FlexContainer section-{{ section.id }}-padding {% if block.settings.PageMainContent__InterviewFlexheading == true %} PageMainContent__FlexContainer--rev {% endif %}" data-flex>
+            <div class="PageMainContent__FlexImgWrapper">
+              <img src="{{ block.settings.PageMainContent__InterviewImg | img_url: 'master' }}">
+            </div>
+            <div class="PageMainContent__FlexTextWrapper">
+              {{ block.settings.PageMainContent__InterviewText }}
+            </div>
+          </div>
+        </div>
+      {% when "paragraph" %}
+        <div class="PageMainContent__TitleWrapper inner section-{{ section.id }}-padding" data-flex="column">
+          {% if block.settings.PageMainContent__InnerSectionSubTitle %}
+              <span class="PageMainContent__SubTitle">
+                {{ block.settings.PageMainContent__InnerSectionSubTitle }}
+              </span>
+          {% endif %}
+          <h2 class="PageMainContent__SectionTitle">
+            {{ block.settings.PageMainContent__InnerSectionTitle | newline_to_br }}
+          </h2>
+        </div>
+        <div
+          class="PageMainContent__InnerFlexContainer section-{{ section.id }}-padding {% if block.settings.PageMainContent__InnerFlexheading == true %} PageMainContent__InnerFlexContainer--rev {% endif %}"
+          data-flex
+        >
+          <div class="PageMainContent__InnerFlexImgWrapper">
+            <img src="{{ block.settings.PageMainContent__InnerImg | img_url: 'master' }}">
+          </div>
+          <div class="PageMainContent__FlexTextWrapper">
+            {{ block.settings.PageMainContent__InnerText }}
+          </div>
+        </div>
     {% endcase %}
   {% endfor %}
 </section>
@@ -57,7 +107,7 @@
     }
   ],
   "settings": [
-      {
+    {
         "type": "range",
         "id": "PageMainContent__Margin",
         "max": 100,
@@ -65,6 +115,15 @@
         "step": 10,
         "label": "上マージン設定",
         "default": -400
+      },
+      {
+        "type": "range",
+        "id": "PageMainContent__Margin--sp",
+        "max": 100,
+        "min": -500,
+        "step": 10,
+        "label": "SP時の上マージン設定",
+        "default": -270
       },
       {
         "type": "header",
@@ -139,6 +198,75 @@
           "type": "image_picker",
           "id": "PageMainContent__Img",
           "label": "画像"
+        },
+        {
+          "type": "image_picker",
+          "id": "PageMainContent__Img--sp",
+          "label": "SP用画像"
+        }
+      ]
+    },
+    {
+      "name": "インタビュー",
+      "type": "textarea",
+      "settings": [
+        {
+          "type": "text",
+          "id": "PageMainContent__InterviewSubTitle",
+          "label": "サブタイトル",
+          "default": "SubTitle"
+        },
+        {
+          "type": "textarea",
+          "id": "PageMainContent__InterviewTitle",
+          "label": "タイトル"
+        },
+        {
+          "type": "checkbox",
+          "id": "PageMainContent__InterviewFlexheading",
+          "label": "PC時のセクションの順番"
+        },
+        {
+          "type": "image_picker",
+          "id": "PageMainContent__InterviewImg",
+          "label": "掲載画像"
+        },
+        {
+          "type": "richtext",
+          "id": "PageMainContent__InterviewText",
+          "label": "コンテンツ"
+        }
+      ]
+    },
+    {
+      "name": "枠内コンテンツ",
+      "type": "paragraph",
+      "settings": [
+        {
+          "type": "text",
+          "id": "PageMainContent__InnerSectionSubTitle",
+          "label": "サブタイトル",
+          "default": "SubTitle"
+        },
+        {
+          "type": "textarea",
+          "id": "PageMainContent__InnerSectionTitle",
+          "label": "タイトル"
+        },
+        {
+          "type": "checkbox",
+          "id": "PageMainContent__InnerFlexheading",
+          "label": "PC時のセクションの順番"
+        },
+        {
+          "type": "image_picker",
+          "id": "PageMainContent__InnerImg",
+          "label": "掲載画像"
+        },
+        {
+          "type": "richtext",
+          "id": "PageMainContent__InnerText",
+          "label": "コンテンツ"
         }
       ]
     }

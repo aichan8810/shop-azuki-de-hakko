@@ -3,7 +3,7 @@
   width: 75vw;
   background: #fff;
   border-radius: 50px;
-  padding: 113px 0;
+  padding: 5.885vh 0;
   position: relative;
   z-index: 2;
   height: fit-content;
@@ -14,7 +14,9 @@
 
 .PageMainContent__TitleWrapper{
   gap: 40px;
-  padding: 0 102px;
+  width: 62.5vw;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .PageMainContent__SubTitle{
@@ -24,7 +26,7 @@
 }
 
 .PageMainContent__SectionTitle{
-  font-size: 30px;
+  font-size: clamp(24px,1.563vw,30px);
   font-weight: 700;
   color: black;
   line-height: 1.8;
@@ -68,6 +70,9 @@
   font-weight: 700;
   line-height: 1.2;
 }
+.PageMainContent__FlexTextWrapper > p{
+  font-size: clamp(13px,0.938vw,18px);
+}
 
 .PageMainContent__FlexTextWrapper > ul{
   padding-left: 30px;
@@ -84,9 +89,84 @@
   align-items: center;
   justify-content: center;
 }
+.PageMainContent__ImageContainer > picture{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-.PageMainContent__ImageContainer > img{
+
+picture > img{
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+.PageMainContent__InterviewContainer{
+  align-items: center;
+  background: #EAEAEA;
+  padding: 2.604vw 0 3.125vw;
+  margin-bottom: 22px;
+}
+
+.PageMainContent__InnerFlexContainer{
+  width: 62.5vw;
+  max-width: 1200px;
+  flex-wrap: nowrap;
+  gap: 35.5px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.PageMainContent__InnerFlexContainer--rev{
+  flex-direction: row-reverse;
+}
+
+.PageMainContent__InnerFlexImgWrapper{
+  width: 31.25vw !important;
+  max-width: 600px;
+  display: flex;
+  aspect-ratio: 3/2;
+}
+
+.PageMainContent__InnerFlexImgWrapper > img{
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+
+@media(max-width: 990px){
+  .PageMainContent__FlexContainer{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80.93vw;
+  }
+  .PageMainContent__FlexImgWrapper{
+    width: 100vw !important;
+  }
+  .PageMainContent{
+    width: 90.698vw;
+  }
+  .PageMainContent__FlexTextWrapper{
+    width: 100%;
+  }
+  .PageMainContent__InnerFlexContainer,.PageMainContent__TitleWrapper{
+    max-width: none;
+    width: 100%;
+  }
+  .PageMainContent__InterviewContainer > *, .PageMainContent__TitleWrapper{
+    max-width: none;
+    width: 84.186%;
+  }
+  .PageMainContent__InnerFlexContainer{
+    flex-direction: column-reverse;
+    width: 84.186%;
+  }
+  .PageMainContent__InnerFlexImgWrapper{
+    width: 100% !important;
+    max-width: none;
+  }
 }
