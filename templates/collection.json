@@ -2,11 +2,13 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
+      "custom_css": [
+        "*{font-size: 30px;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab"
       }
     },
     "product-grid": {
