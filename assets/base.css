@@ -3527,7 +3527,7 @@ ul{
   background: #d7b59d;
 }
 .Shop_name{
-  color: #8A000D;
+  color: #8A000D !important;
 }
 
 .loginText{
