@@ -32,11 +32,36 @@
             "PageMainContent__ExplainImg": "shopify:\/\/shop_images\/20240130_105.jpg",
             "PageMainContent__ExplainText": "<p>私たち日本人にとって身近な食材「小豆／隠げん豆」。豆類の中でも特に粒の小さいこの豆が、古来には薬として用いられていたほど、滋養豊かな作物であることをご存知でしょうか。タンパク質や食物繊維を多く含んで栄養バランスが良く、抗酸化作用がありポフィフェノールも豊富。まさに“天然のプロテインであり、サプリメント”でもあるのです。<\/p><h3>＜小豆の栄養的特徴＞<\/h3><ul><li>ポリフェノールの抗酸化作用でアンチエイジング<\/li><li>高タンパクで、理想的な栄養バランス<\/li><li>ビタミン群や、鉄分などのミネラルも豊富<\/li><li>腸内環境を良くする豊富な食物繊維やレジスタントスターチ<\/li><li>炭水化物主体で低脂質<\/li><\/ul>"
           }
+        },
+        "text_dMtYL3": {
+          "type": "text",
+          "settings": {
+            "PageMainContent__SectionSubTitle": "",
+            "PageMainContent__SectionTitle": "「栄養」も「美味しさ／旨み」も、まるごと醸す。\n発酵でさらに広がる、小豆や隠元豆の可能性。"
+          }
+        },
+        "richtext_4dzbK3": {
+          "type": "richtext",
+          "settings": {
+            "PageMainContent__ExplainFlexheading": true,
+            "PageMainContent__ExplainImg": "shopify:\/\/shop_images\/20240130_057.jpg",
+            "PageMainContent__ExplainText": "<p>小豆を独自技法で発酵させることで、栄養も美味しさも、さらに進化させることに成功しました。それが「小豆麹」です。見た目は従来の「あんこ」のまま、砂糖の使用量を半減させつつより豊かな風味を実現した「発酵あん」をはじめ、スポーツや美容分野への展開など、幅広い可能性を「Azuki de Hakko」は視野に入れています。「小豆＝和菓子」といった従来のイメージを超えて、より多くの方々に小豆麹の力をお届けしてまいります。<\/p><h3>＜小豆麹の特徴＞<\/h3><ul><li>無添加！原料は小豆や隠元豆と米麹のみ。<\/li><li>タンパク質は天然のアミノ酸（20種類以上）へ変化。<\/li><li>砂糖の使用量は従来の半分！分解しやすく優しい天然のブドウ糖。<\/li><li>小豆＋米麹の和以上にポリフェノールが増加（赤ワインの約5倍）<\/li><li>低脂肪・低カロリーなのに栄養豊富<\/li><\/ul>"
+          }
+        },
+        "text_aCr9Bc": {
+          "type": "text",
+          "settings": {
+            "PageMainContent__SectionSubTitle": "",
+            "PageMainContent__SectionTitle": "小豆の「栄養」も「お美味さ、\n旨み」も、発酵でまるごと醸す。"
+          }
         }
       },
       "block_order": [
         "text_VzbDGe",
-        "richtext_iPUHEh"
+        "richtext_iPUHEh",
+        "text_dMtYL3",
+        "richtext_4dzbK3",
+        "text_aCr9Bc"
       ],
       "settings": {
         "PageMainContent__Margin": -400,
