@@ -17,6 +17,18 @@
     },
     "page_main_content_tAmmUj": {
       "type": "page-main-content",
+      "blocks": {
+        "text_VzbDGe": {
+          "type": "text",
+          "settings": {
+            "PageMainContent__SectionSubTitle": "Features",
+            "PageMainContent__SectionTitle": "小さな豆の、大きな力。\n古来から伝わるスーパーフード・小豆／隠げん豆。"
+          }
+        }
+      },
+      "block_order": [
+        "text_VzbDGe"
+      ],
       "settings": {
         "PageMainContent__Margin": -400,
         "padding_top": 36,
