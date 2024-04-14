@@ -18,11 +18,19 @@
             "Footer__MenuOther": "・ニュース",
             "Footer__MenuOtherLink": "shopify:\/\/blogs\/news"
           }
+        },
+        "textarea_dqiWWe": {
+          "type": "textarea",
+          "settings": {
+            "Footer__MenuOther": "・店舗情報",
+            "Footer__MenuOtherLink": "shopify:\/\/pages\/店舗情報"
+          }
         }
       },
       "block_order": [
         "textarea_weneem",
-        "textarea_XbXQK3"
+        "textarea_XbXQK3",
+        "textarea_dqiWWe"
       ],
       "settings": {
         "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab"
