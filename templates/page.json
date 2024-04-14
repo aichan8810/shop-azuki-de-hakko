@@ -81,6 +81,26 @@
             "PageMainContent__InterviewImg": "shopify:\/\/shop_images\/DSC08401.jpg",
             "PageMainContent__InterviewText": "<p>私たちは米麹で発酵させた「小豆麹」を、「さらに乳酸菌で発酵させる」という二次発酵の研究でご一緒しました。実験においてまず驚いたのが、乳酸菌の増殖率の高さ（※）。普通の「小豆」ではこうはいきませんし、ここまで乳酸菌が増える発酵媒体にこれまで出会ったことがなかったので、その時点で「小豆麹」のポテンシャルの高さを感じていました。<br\/><br\/>また、乳酸発酵によってアミノ酸の値が増えたこと、そして抗酸化作用が上がったということも確認されています（※）。<br\/>そして、麹で醸された甘さと乳酸菌の酸が合わさった、爽やかな風味も魅力です。乳酸菌は「お漬物」はじめ、私たち日本人にとっても馴染み深い菌ですが、「小豆」と「麹」という伝統的な食品との出会いによって生まれる今後の展開を、私たちも期待しています。<br\/><br\/>※「あずき麹」の発酵液1mlあたり10の11乗。乳酸菌の菌株による。<\/p>"
           }
+        },
+        "paragraph_wJbEJw": {
+          "type": "paragraph",
+          "settings": {
+            "PageMainContent__InnerSectionSubTitle": "History",
+            "PageMainContent__InnerSectionTitle": "小豆や隠元豆、そして米麹。\n老舗和菓子屋が起こす“小豆のイノベーション”。",
+            "PageMainContent__InnerFlexheading": true,
+            "PageMainContent__InnerImg": "shopify:\/\/shop_images\/20240130_101.jpg",
+            "PageMainContent__InnerText": "<p>明治21年の創業以来、小豆などを中心とした豆類を扱い続けてきた「越山甘清堂」。そして米麹もまた伝統的な酒饅頭製造に用いる、和菓子屋・越山甘清堂として欠かせない素材です。いつも私たちの身近にあった「小豆」と「麹」。「この二つを掛け合わせてみたら…？」そんな素朴なひらめきから、「Azuki de Hakko」プロジェクトがスタートしました。独学での研究からスタートし、太田教授（金沢大学）のご協力、そして石川県立大学との連携のもと産学共同で研究を進め、化学的なアプローチからも検証。ついに当社独自の製造手法による「小豆麹」が誕生しました。<\/p>"
+          }
+        },
+        "paragraph_CmbzcP": {
+          "type": "paragraph",
+          "settings": {
+            "PageMainContent__InnerSectionSubTitle": "Vision",
+            "PageMainContent__InnerSectionTitle": "自然の力で、おいしく、健康に。\n越山甘清堂は “お豆の創造活用企業”へ。",
+            "PageMainContent__InnerFlexheading": true,
+            "PageMainContent__InnerImg": "shopify:\/\/shop_images\/20240130_058.jpg",
+            "PageMainContent__InnerText": "<p>「小豆」と「発酵」の掛け合わせは、まだ未知数の可能性を秘めていると感じています。私たちが目指すのは、「小豆麹」が特別なものではなく、味噌や醤油のように「あたりまえ」のものとして私たちの暮らしに溶け込んでいる地平です。小豆麹の力を、すべての人の健康と豊かな暮らしにお役立ていただくべく、「越山甘清堂」「Cafe Kan」、そして「Azuki  de Hakko」の三つのブランドからなる「お豆の総合活用企業」として、私たちは今後も研究を進めてまいります。<\/p>"
+          }
         }
       },
       "block_order": [
@@ -91,7 +111,9 @@
         "text_aCr9Bc",
         "image_picker_JAAbFd",
         "textarea_thtYNR",
-        "textarea_3N6QJn"
+        "textarea_3N6QJn",
+        "paragraph_wJbEJw",
+        "paragraph_CmbzcP"
       ],
       "settings": {
         "PageMainContent__Margin": -400,
