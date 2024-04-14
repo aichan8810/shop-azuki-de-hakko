@@ -1,5 +1,5 @@
 .ShopInfo__Container{
-  max-width: 100px;
+  max-width: 1000px;
   width: 100%;
   gap: 15px;
   padding-top: clamp(43px, 3.646vw, 70px);
