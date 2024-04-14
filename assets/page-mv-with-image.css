@@ -1,0 +1,13 @@
+.MvWithImg{
+  width: 100vw;
+  aspect-ratio: 32/15;
+  margin: 0;
+}
+
+.MvWithImg__Title{
+  font-size: 19.62px;
+  font-weight: 700;
+  padding-top: 200px;
+  margin: 0;
+  text-align: center;
+}

@@ -1,0 +1,131 @@
+{{ "page-main-content.css" | asset_url | stylesheet_tag }}
+<style>
+  .PageMainContent{
+    margin-top: {{ section.settings.PageMainContent__Margin }}px;
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+</style>
+<section class="PageMainContent">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "text" %}
+          <div class="PageMainContent__TitleWrapper section-{{ section.id }}-padding" data-flex="column">
+            {% if block.settings.PageMainContent__SectionSubTitle %}
+                <span class="PageMainContent__SubTitle">
+                  {{ block.settings.PageMainContent__SectionSubTitle }}
+                </span>
+            {% endif %}
+            <h2 class="PageMainContent__SectionTitle">
+              {{ block.settings.PageMainContent__SectionTitle | newline_to_br }}
+            </h2>
+          </div>
+      {% when "richtext" %}
+          <div class="PageMainContent__FlexContainer section-{{ section.id }}-padding {% if block.settings.PageMainContent__ExplainFlexheading == true %} PageMainContent__FlexContainer--rev {% endif %}" data-flex>
+            <div class="PageMainContent__FlexImgWrapper">
+              <img src="{{ block.settings.PageMainContent__ExplainImg | img_url: 'master' }}">
+            </div>
+            <div class="PageMainContent__FlexTextWrapper">
+              {{ block.settings.PageMainContent__ExplainText }}
+            </div>
+          </div>
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "ページメイン",
+  "presets": [
+    {
+      "name": "ページメイン"
+    }
+  ],
+  "settings": [
+      {
+        "type": "range",
+        "id": "PageMainContent__Margin",
+        "max": 100,
+        "min": -500,
+        "step": 10,
+        "label": "上マージン設定",
+        "default": -400
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+
+    ],
+  "blocks": [
+    {
+      "name": "タイトルセクション",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "PageMainContent__SectionSubTitle",
+          "label": "サブタイトル",
+          "default": "SubTitle"
+        },
+        {
+          "type": "textarea",
+          "id": "PageMainContent__SectionTitle",
+          "label": "タイトル"
+        }
+      ]
+    },
+    {
+      "name": "画像付きテキスト",
+      "type": "richtext",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "PageMainContent__ExplainFlexheading",
+          "label": "PC時のセクションの順番"
+        },
+        {
+          "type": "image_picker",
+          "id": "PageMainContent__ExplainImg",
+          "label": "掲載画像"
+        },
+        {
+          "type": "richtext",
+          "id": "PageMainContent__ExplainText",
+          "label": "コンテンツ"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

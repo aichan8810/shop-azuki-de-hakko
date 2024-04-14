@@ -1,0 +1,38 @@
+{{ "page-mv-with-image.css" | asset_url | stylesheet_tag }}
+
+{% style %}
+  .MvWithImg{
+    background: url("{{ section.settings.MvWithImg__BGImage | img_url: 'master' }}") no-repeat center;
+    background-size: cover;
+  }
+  .MvWithImg__Title{
+    color: {{ section.settings.MvWithImg__TitleColor }};
+  }
+{% endstyle %}
+<section class="MvWithImg">
+  <h1 class="MvWithImg__Title">{{ page.title }}</h1>
+
+</section>
+
+{% schema %}
+{
+  "name": "ページMV（背景画像）",
+  "presets": [
+    {
+      "name": "ページMV（背景画像）"
+    }
+  ],
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "MvWithImg__BGImage",
+        "label": "背景画像"
+      },
+      {
+        "type": "color",
+        "id": "MvWithImg__TitleColor",
+        "label": "テキストカラー"
+      }
+    ]
+}
+{% endschema %}

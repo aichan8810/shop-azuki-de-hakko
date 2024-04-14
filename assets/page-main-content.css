@@ -1,0 +1,78 @@
+.PageMainContent{
+  max-width: 1440px;
+  width: 75vw;
+  background: #fff;
+  border-radius: 50px;
+  padding: 113px 0;
+  position: relative;
+  z-index: 2;
+  height: fit-content;
+  margin: 0 auto 0;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.PageMainContent__TitleWrapper{
+  gap: 40px;
+  padding: 0 102px;
+}
+
+.PageMainContent__SubTitle{
+  font-size: 12px;
+  color: #9E0810;
+  font-weight: 700;
+}
+
+.PageMainContent__SectionTitle{
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.PageMainContent__FlexContainer{
+  max-width: 1398.6px;
+  width: 72.844vw;
+  flex-wrap: nowrap;
+  gap: 35.5px;
+  margin: 0 -97px 0 auto;
+  margin-left: clamp(-5.052vw,-5.052vw,-97px);
+  flex-direction: row;
+}
+.PageMainContent__FlexContainer--rev{
+  margin: 0 -97px 0 auto;
+  margin-right: clamp(-5.052vw,-5.052vw,-97px);
+  flex-direction: row-reverse;
+}
+
+.PageMainContent__FlexImgWrapper{
+  width: clamp(41.667vw,41.667vw,800px) !important;
+  display: flex;
+  aspect-ratio: 20/13;
+}
+
+.PageMainContent__FlexImgWrapper > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.PageMainContent__FlexTextWrapper{
+  width: 50%;
+}
+
+.PageMainContent__FlexTextWrapper > h3{
+  font-size: 18px;
+  color: #9E0810;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.PageMainContent__FlexTextWrapper > ul{
+  padding-left: 30px;
+}
+
+.PageMainContent__FlexTextWrapper > ul > li{
+  list-style-type: "◎";
+}

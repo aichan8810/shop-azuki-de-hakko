@@ -301,7 +301,7 @@
 
     {% sections 'header-group' %}
 
-  <main id="MainContent" class="content-for-layout focus-none {% if request.path contains 'policies' %} content-policies {% endif %}" role="main" tabindex="-1">
+  <main id="MainContent" class="content-for-layout focus-none {% if request.path contains 'policies' %} content-policies {% endif %} {% if page  %} brown-bg {% endif %}" role="main" tabindex="-1">
     {% assign path = request.path %}
     {% if path contains '/policies/privacy-policy' %}
       <h1 class="Pages__Title">Privacy policy</h1>
