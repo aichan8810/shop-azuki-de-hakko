@@ -5,46 +5,27 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "textarea_weneem": {
+          "type": "textarea",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "Footer__MenuOther": "・AZUKI de HAKKOの想い",
+            "Footer__MenuOtherLink": "shopify:\/\/pages\/azuki-de-hakkoの想い"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "textarea_XbXQK3": {
+          "type": "textarea",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "Footer__MenuOther": "・ニュース",
+            "Footer__MenuOtherLink": "shopify:\/\/blogs\/news"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "textarea_weneem",
+        "textarea_XbXQK3"
       ],
       "settings": {
-        "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab"
       }
     }
   },
