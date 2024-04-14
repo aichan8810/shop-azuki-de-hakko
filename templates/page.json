@@ -12,7 +12,7 @@
       "type": "page-mv-with-image",
       "settings": {
         "MvWithImg__BGImage": "shopify:\/\/shop_images\/20240130_048.jpg",
-        "MvWithImg__TitleColor": "#fff"
+        "MvWithImg__TitleColor": "#ffffff"
       }
     },
     "page_main_content_tAmmUj": {
@@ -54,6 +54,12 @@
             "PageMainContent__SectionSubTitle": "",
             "PageMainContent__SectionTitle": "小豆の「栄養」も「お美味さ、\n旨み」も、発酵でまるごと醸す。"
           }
+        },
+        "image_picker_JAAbFd": {
+          "type": "image_picker",
+          "settings": {
+            "PageMainContent__Img": "shopify:\/\/shop_images\/86.png"
+          }
         }
       },
       "block_order": [
@@ -61,7 +67,8 @@
         "richtext_iPUHEh",
         "text_dMtYL3",
         "richtext_4dzbK3",
-        "text_aCr9Bc"
+        "text_aCr9Bc",
+        "image_picker_JAAbFd"
       ],
       "settings": {
         "PageMainContent__Margin": -400,
