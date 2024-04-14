@@ -24,10 +24,19 @@
             "PageMainContent__SectionSubTitle": "Features",
             "PageMainContent__SectionTitle": "小さな豆の、大きな力。\n古来から伝わるスーパーフード・小豆／隠げん豆。"
           }
+        },
+        "richtext_iPUHEh": {
+          "type": "richtext",
+          "settings": {
+            "PageMainContent__ExplainFlexheading": false,
+            "PageMainContent__ExplainImg": "shopify:\/\/shop_images\/20240130_105.jpg",
+            "PageMainContent__ExplainText": "<p>私たち日本人にとって身近な食材「小豆／隠げん豆」。豆類の中でも特に粒の小さいこの豆が、古来には薬として用いられていたほど、滋養豊かな作物であることをご存知でしょうか。タンパク質や食物繊維を多く含んで栄養バランスが良く、抗酸化作用がありポフィフェノールも豊富。まさに“天然のプロテインであり、サプリメント”でもあるのです。<\/p><h3>＜小豆の栄養的特徴＞<\/h3><ul><li>ポリフェノールの抗酸化作用でアンチエイジング<\/li><li>高タンパクで、理想的な栄養バランス<\/li><li>ビタミン群や、鉄分などのミネラルも豊富<\/li><li>腸内環境を良くする豊富な食物繊維やレジスタントスターチ<\/li><li>炭水化物主体で低脂質<\/li><\/ul>"
+          }
         }
       },
       "block_order": [
-        "text_VzbDGe"
+        "text_VzbDGe",
+        "richtext_iPUHEh"
       ],
       "settings": {
         "PageMainContent__Margin": -400,
