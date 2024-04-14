@@ -39,6 +39,11 @@
               {{ block.settings.PageMainContent__ExplainText }}
             </div>
           </div>
+      {% when "image_picker" %}
+        <div class="PageMainContent__ImageContainer section-{{ section.id }}-padding" data-flex>
+          <img src="{{ block.settings.PageMainContent__Img | img_url: 'master' }}">
+        </div>
+
     {% endcase %}
   {% endfor %}
 </section>
@@ -123,6 +128,17 @@
           "type": "richtext",
           "id": "PageMainContent__ExplainText",
           "label": "コンテンツ"
+        }
+      ]
+    },
+    {
+      "name": "画像",
+      "type": "image_picker",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "PageMainContent__Img",
+          "label": "画像"
         }
       ]
     }
