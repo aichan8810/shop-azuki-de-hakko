@@ -35,6 +35,7 @@ p{
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .MailMagazine__Form{
@@ -84,4 +85,25 @@ p{
 .MailMagazine__CautionText{
   font-size: 12px;
   font-weight: 400;
+}
+
+@media(max-width: 990px){
+  .MailMagazine__Container{
+    min-width: 377px;
+    width: 87.674vw;
+  }
+  .MailMagazine__FormBtn{
+    min-width: 80px;
+    width: 23%;
+    font-size: 10px;
+  }
+  .MailMagazine__Form{
+    width: 77%;
+  }
+}
+
+@media(max-width: 500px){
+  .MailMagazine__Container{
+    padding: 9.302vh 15px 7.442vh;
+  }
 }
