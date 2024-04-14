@@ -1,0 +1,20 @@
+.ShopInfo__Container{
+  max-width: 100px;
+  width: 100%;
+  gap: 15px;
+  padding-top: clamp(43px, 3.646vw, 70px);
+  padding-bottom: clamp(43px, 3.646vw, 70px);
+}
+
+.ShopInfo__Container > *{
+  margin: 0;
+}
+
+.ShopInfo__Container > h2{
+  font-size: clamp(16px, 0.938vw , 18px);
+  font-weight: bold;
+}
+.ShopInfo__Container > p{
+  font-size: clamp(16px, 0.938vw , 18px);
+  font-weight: 400;
+}
