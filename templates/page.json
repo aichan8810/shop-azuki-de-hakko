@@ -58,7 +58,28 @@
         "image_picker_JAAbFd": {
           "type": "image_picker",
           "settings": {
-            "PageMainContent__Img": "shopify:\/\/shop_images\/86.png"
+            "PageMainContent__Img": "shopify:\/\/shop_images\/86.png",
+            "PageMainContent__Img--sp": "shopify:\/\/shop_images\/320.png"
+          }
+        },
+        "textarea_thtYNR": {
+          "type": "textarea",
+          "settings": {
+            "PageMainContent__InterviewSubTitle": "Interview 01",
+            "PageMainContent__InterviewTitle": "“天然のアミノ酸”を含む希少な食品で、\n“あんこ”の概念を拡張。",
+            "PageMainContent__InterviewFlexheading": true,
+            "PageMainContent__InterviewImg": "shopify:\/\/shop_images\/DSC08355.jpg",
+            "PageMainContent__InterviewText": "<p>あずきや隠元豆は、タンパク質・食物繊維・炭水化物のバランスに非常に優れています。そして米麹で発酵させることにより、タンパク質はアミノ酸へと分解されます。科学的に合成したものではない、この“天然のアミノ酸”を含んだ食品は非常に希少です。また、米麹の働きで炭水化物はブドウ糖へと変化。砂糖のような強い甘さではない、穏やかな甘みが魅力です。さらに発酵によって香りや風味も醸され、これまでにない深い味わいを「Azuki de Hakko」の商品は実現していると思います。<br\/><br\/>小豆は長い歴史の中で主に「あんこ」として親しまれてきましたが、その様式は実は何百年と変わっていません。「Azuki de Hakko」 の試みは「あんこ」の概念を広げ、和菓子に留まらない「小豆」の可能性を広げてくれることでしょう。<br\/><\/p>"
+          }
+        },
+        "textarea_3N6QJn": {
+          "type": "textarea",
+          "settings": {
+            "PageMainContent__InterviewSubTitle": "Interview 02",
+            "PageMainContent__InterviewTitle": "「小豆麹」と「乳酸菌」の意外な相性。\n「乳酸発酵小豆」のポテンシャル。",
+            "PageMainContent__InterviewFlexheading": true,
+            "PageMainContent__InterviewImg": "shopify:\/\/shop_images\/DSC08401.jpg",
+            "PageMainContent__InterviewText": "<p>私たちは米麹で発酵させた「小豆麹」を、「さらに乳酸菌で発酵させる」という二次発酵の研究でご一緒しました。実験においてまず驚いたのが、乳酸菌の増殖率の高さ（※）。普通の「小豆」ではこうはいきませんし、ここまで乳酸菌が増える発酵媒体にこれまで出会ったことがなかったので、その時点で「小豆麹」のポテンシャルの高さを感じていました。<br\/><br\/>また、乳酸発酵によってアミノ酸の値が増えたこと、そして抗酸化作用が上がったということも確認されています（※）。<br\/>そして、麹で醸された甘さと乳酸菌の酸が合わさった、爽やかな風味も魅力です。乳酸菌は「お漬物」はじめ、私たち日本人にとっても馴染み深い菌ですが、「小豆」と「麹」という伝統的な食品との出会いによって生まれる今後の展開を、私たちも期待しています。<br\/><br\/>※「あずき麹」の発酵液1mlあたり10の11乗。乳酸菌の菌株による。私たちは米麹で発酵させた「小豆麹」を、「さらに乳酸菌で発酵させる」という二次発酵の研究でご一緒しました。実験においてまず驚いたのが、乳酸菌の増殖率の高さ（※）。普通の「小豆」ではこうはいきませんし、ここまで乳酸菌が増える発酵媒体にこれまで出会ったことがなかったので、その時点で「小豆麹」のポテンシャルの高さを感じていました。<br\/><br\/>また、乳酸発酵によってアミノ酸の値が増えたこと、そして抗酸化作用が上がったということも確認されています（※）。<br\/>そして、麹で醸された甘さと乳酸菌の酸が合わさった、爽やかな風味も魅力です。乳酸菌は「お漬物」はじめ、私たち日本人にとっても馴染み深い菌ですが、「小豆」と「麹」という伝統的な食品との出会いによって生まれる今後の展開を、私たちも期待しています。<br\/><br\/>※「あずき麹」の発酵液1mlあたり10の11乗。乳酸菌の菌株による。<\/p>"
           }
         }
       },
@@ -68,10 +89,13 @@
         "text_dMtYL3",
         "richtext_4dzbK3",
         "text_aCr9Bc",
-        "image_picker_JAAbFd"
+        "image_picker_JAAbFd",
+        "textarea_thtYNR",
+        "textarea_3N6QJn"
       ],
       "settings": {
         "PageMainContent__Margin": -400,
+        "PageMainContent__Margin--sp": -270,
         "padding_top": 36,
         "padding_bottom": 28
       }
