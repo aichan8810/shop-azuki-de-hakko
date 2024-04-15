@@ -23,7 +23,7 @@
           "type": "textarea",
           "settings": {
             "Footer__MenuOther": "・店舗情報",
-            "Footer__MenuOtherLink": "shopify:\/\/pages\/店舗情報"
+            "Footer__MenuOtherLink": "shopify:\/\/pages\/shop-and-factory"
           }
         }
       },
