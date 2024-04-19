@@ -23,7 +23,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,10 +33,27 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "section_blog_content_zWCacL": {
+      "type": "section-blog-content",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "section_mail_magazine_GrNYwi": {
+      "type": "section-mail-magazine",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_blog_content_zWCacL",
+    "section_mail_magazine_GrNYwi"
   ]
 }
