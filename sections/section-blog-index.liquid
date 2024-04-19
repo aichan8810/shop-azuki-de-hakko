@@ -1,0 +1,91 @@
+{{ "section-blog.css" |  asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .original-page-title{
+    font-size: 14px;
+    font-weight: 700;
+  }
+{%- endstyle -%}
+
+{% assign blog = blogs[section.settings.Blog__Kind] %}
+<section class="BlogAll section-{{ section.id }}-padding" data-flex="column">
+  <h1 class="original-page-title">{{ blog.title }}</h1>
+  <ul class="BlogAll__Container section-pageInnerWidth">
+    {%- paginate blog.articles by 5 -%}
+    {% for article in blog.articles %}
+      <li class="BlogAll__Article {% if forloop.last == true %}last-column{% endif %}">
+        <a href="{{ article.url }}" data-flex>
+          <div class="BlogAll__ArticleThumbnail">
+            <img src="{{ article.image.src |  img_url: 'medium' }}" alt="{{ article.title }}">
+          </div>
+          <div class="BlogAll__ArticleContent" data-flex="column">
+            <span class="BlogAll__ArticleDate">
+              {{ article.published_at | date: "%Y.%m.%d" }}
+            </span>
+            <p class="BlogAll__ArticleTitle">
+              {{ article.title }}
+            </p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  {%- endpaginate -%}
+  </ul>
+  {%- if paginate.pages > 1 -%}
+    {%- render 'pagination', paginate: paginate -%}
+  {%- endif -%}
+</section>
+{% schema %}
+{
+  "name": "ブログ一覧",
+  "presets": [
+    {
+      "name": "ブログ一覧"
+    }
+  ],
+  "settings": [
+      {
+        "type": "blog",
+        "id": "Blog__Kind",
+        "label": "ブログ名"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+
+    ]
+}
+{% endschema %}

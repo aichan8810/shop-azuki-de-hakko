@@ -1,0 +1,75 @@
+{{ "section-blog.css" |  asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .original-page-title{
+    font-size: 14px;
+    font-weight: 700;
+  }
+{%- endstyle -%}
+
+<section class="BlogAll section-{{ section.id }}-padding" data-flex="column">
+  <div class="BlogAll__Container section-pageInnerWidth">
+    <div class="BlogContent__ArticleContent" data-flex="column">
+      <span class="BlogAll__ArticleDate">
+        {{ article.published_at | date: "%Y.%m.%d" }}
+      </span>
+      <p class="BlogAll__ArticleTitle">
+        {{ article.title }}
+      </p>
+    </div>
+    <hr class="BlogContent__Hr">
+    <div class="BlogContent">
+      {{ article.content }}
+    </div>
+  </div>
+  <a href="{{ blog.url }}" class="toAll" data-flex>ニュース一覧へ<span class="MoreCircle"></span></a>
+</section>
+{% schema %}
+{
+  "name": "ブログ詳細",
+  "presets": [
+    {
+      "name": "ブログ詳細"
+    }
+  ],
+  "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+
+    ]
+}
+{% endschema %}

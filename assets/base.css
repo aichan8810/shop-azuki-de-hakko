@@ -3448,7 +3448,7 @@ details-disclosure > details {
 /* 共通width */
 .section-pageInnerWidth{
   max-width: 1000px;
-  width: 52.083vw;
+  width: 100%;
   margin: 0 auto;
 }
 [data-flex]{
