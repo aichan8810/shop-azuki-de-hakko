@@ -105,5 +105,16 @@ p{
 @media(max-width: 500px){
   .MailMagazine__Container{
     padding: 9.302vh 15px 7.442vh;
+    min-width: 0;
+  }
+}
+
+@media(max-width: 375px){
+  .MailMagazine__FormWrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .MailMagazine__Form,.MailMagazine__FormBtn{
+    width: 100%;
   }
 }

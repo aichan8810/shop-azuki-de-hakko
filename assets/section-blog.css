@@ -5,6 +5,7 @@
 }
 .BlogAll__Container{
   background: #fff;
+  margin-bottom: clamp(18px,2.24vw,43px);
 }
 
 .BlogAll__Article{
@@ -62,4 +63,18 @@
 .toAll{
   align-items: center;
   gap: 10px;
+}
+
+@media(max-width: 500px){
+  .BlogAll__ArticleThumbnail{
+    min-width: 130px;
+    width: 34.121vw;
+  }
+  .BlogAll__ArticleThumbnail > img{
+    width: 100% !important;
+    object-fit: cover;
+  }
+  .BlogAll__ArticleContent{
+    gap: 18px;
+  }
 }
