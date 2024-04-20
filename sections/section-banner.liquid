@@ -1,14 +1,14 @@
 <style>
   .CampaignBanner{
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     bottom: 45px;
     right: 40px;
     margin: auto;
     width: 360px;
     aspect-ratio: 3/1;
     height: fit-content;
-    transition: .4s;
+    transition: 1s;
   }
   .CampaignBanner:hover{
     opacity: .8;
@@ -19,6 +19,65 @@
     height: 100%;
     object-fit: contain;
   }
+  .Banner_Container{
+    position: relative;
+  }
+  .closeBanner{
+    display: flex;
+    position: absolute;
+    top: -.75em;
+    right: 0;
+    margin: auto;
+    font-size: 100%;/*ボタンの大きさ*/
+    font-weight: bold;
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 9999;
+
+  }
+  .closeBanner:hover{
+    background: #333;
+    border-color: #333;
+    color: #FFF;
+}
+.dli-close {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 1em;
+  height: 0.1em;
+  background: currentColor;
+  border-radius: 0.1em;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.dli-close::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  transform: rotate(90deg);
+}
+.close{
+  opacity: 0;
+  z-index: -9999;
+}
+
   @media(max-width: 500px){
     .CampaignBanner{
       left: 0;
@@ -28,10 +87,20 @@
   }
 </style>
 <section class="CampaignBanner">
-  <a href="{{ section.settings.CampaignBanner__Link }}">
+  <div class="closeBanner"><span class="dli-close"></span></div>
+  <a href="{{ section.settings.CampaignBanner__Link }}" class="Banner_Container">
     <img src="{{ section.settings.CampaignBanner__img | img_url: 'master' }}" alt="キャンペーンバナー">
   </a>
 </section>
+<script>
+  let Banner = document.querySelector('.CampaignBanner');
+  let Btn = document.querySelector('.closeBanner');
+  document.addEventListener('DOMContentLoaded', function(){
+    Btn.addEventListener('click', function(){
+      Banner.classList.add('close');
+    })
+  })
+</script>
 
 {% schema %}
 {

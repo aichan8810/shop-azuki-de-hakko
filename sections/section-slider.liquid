@@ -1,6 +1,5 @@
 {{"section-slider.css" |  asset_url | stylesheet_tag}}
-{{ "slider-motion.js" | asset_url | script_tag }}
-<section class="Slider__Padding">
+{% comment %} <section class="Slider__Padding">
   <div class="Mainvisual__TextContainer">
     <h1 class="MainVisual__Title">
       {{ section.settings.MainVisual__Title | newline_to_br }}
@@ -10,8 +9,17 @@
     </p>
   </div>
 </section>
-
+ {% endcomment %}
 <section class="Slider">
+  <div class="Mainvisual__TextContainer">
+    <h1 class="MainVisual__Title">
+      {{ section.settings.MainVisual__Title | newline_to_br }}
+    </h1>
+    <p class="Slider__Text--PC">
+      {{ section.settings.MainVisual__Text | newline_to_br }}
+    </p>
+  </div>
+
   <div class="Slider__ContentWrapper">
     {% for block in section.blocks %}
       <div class="Slider__Content">
