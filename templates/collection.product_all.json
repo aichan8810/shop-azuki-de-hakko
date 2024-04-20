@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        "* {font-size: 30px;}"
+      ],
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_column_list_mpBwaC": {
+      "type": "section-column-list",
+      "blocks": {
+        "collection_qmFmt6": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "あんスプレッド"
+          }
+        },
+        "collection_n8hiNF": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "ようかん"
+          }
+        },
+        "collection_3PCnRQ": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "ギフト"
+          }
+        },
+        "collection_cLVP3q": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "グラノーラ"
+          }
+        },
+        "collection_WXeDrf": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "和菓子"
+          }
+        },
+        "collection_NHmBtJ": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "飲-料"
+          }
+        }
+      },
+      "block_order": [
+        "collection_qmFmt6",
+        "collection_n8hiNF",
+        "collection_3PCnRQ",
+        "collection_cLVP3q",
+        "collection_WXeDrf",
+        "collection_NHmBtJ"
+      ],
+      "settings": {
+        "ColumnList__Title": "Category",
+        "ColumnList__Length": 6
+      }
+    },
+    "section_mail_magazine_9UpwXn": {
+      "type": "section-mail-magazine",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "section_column_list_mpBwaC",
+    "section_mail_magazine_9UpwXn"
+  ]
+}
