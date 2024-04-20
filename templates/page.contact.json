@@ -21,18 +21,24 @@
     "section_contact_page_wf4XDP": {
       "type": "section-contact-page",
       "settings": {
-        "heading": "Contact",
+        "heading": "",
         "color_scheme": "scheme-21977999-ef4f-4670-8688-54b9812ebaab",
-        "content": "",
-        "content__footer": "",
+        "content": "当店に対するご意見ご感想、お問い合わせなど、こちらのフォームよりお気軽にお尋ねください。\n\n※お問い合わせ（本ページ）からの商品の注文は承っておりません。こちらからご予約をされた場合につきましては、受注漏れとなる恐れがございます。万が一商品の受け取りが出来なくても責任を負いかねますので、予めご了承ください。\nまた、お急ぎで商品のご要望・お問い合わせがあるお客様は直接お電話にて承ります。TEL.076-221-0336\n何卒宜しくお願い致します。",
+        "content__footer": "※メールアドレスは誤入力を防止する為に同様のアドレスを2回入力してください。\n※土日祝日等、営業時間外でのご対応はできかねますので予めご了承ください。\n※3営業日以内に返信がない場合、越山甘清堂からお送りしたメールを受信できていない可能性がございます。迷惑メールフォルダのご確認と、”webmaster@koshiyamakanseido.jp “からのメールを受信可能な状態へご設定ください。",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "section_mail_magazine_QaVbD8": {
+      "type": "section-mail-magazine",
+      "settings": {
       }
     }
   },
   "order": [
     "main",
     "form",
-    "section_contact_page_wf4XDP"
+    "section_contact_page_wf4XDP",
+    "section_mail_magazine_QaVbD8"
   ]
 }
