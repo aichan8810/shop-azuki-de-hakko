@@ -2,7 +2,6 @@
   background: #d7b59d;
   align-items: center;
   justify-content: center;
-  gap: clamp(67px,5.677083333333333vw, 109px) ;
 }
 .BlogAll__Container{
   background: #fff;
