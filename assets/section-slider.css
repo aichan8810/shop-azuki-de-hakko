@@ -4,6 +4,9 @@
   aspect-ratio: 96 / 49;
   position: relative;
 }
+.slick-list{
+  height: 100%;
+}
 
 .Slider__ContentWrapper {
   width: 100%;
