@@ -48,6 +48,9 @@ p{
 @media(max-width: 767px){
   .ColumnList__ColumnContainer{
     width: 87.674vw;
-    grid-template-columns: repeat(auto-fill, 180px);
+    grid-template-columns: repeat(auto-fill, 230px);
+  }
+  .ColumnList__Content{
+    width: 230px;
   }
   }
