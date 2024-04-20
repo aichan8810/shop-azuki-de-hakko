@@ -1,0 +1,82 @@
+{{ "product-all.css" |  asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .custom-bg{
+    background-color: {{ section.settings.background }};
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding custom-bg">
+  <div class="ShowProduct__Container">
+    {% for block in section.blocks %}
+      {% assign collection = collections[block.settings.collection] %}
+      {% assign product = collection.products %}
+      {% render "product-all.liquid" block: block, product: product, collection: collection %}
+    {% endfor %}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "商品一覧",
+  "presets": [
+    {
+      "name": "商品一覧"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "label": "背景色",
+      "id": "background"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+
+    ],
+    "blocks": [
+      {
+        "name": "商品",
+        "type": "collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "コレクションを選択"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}

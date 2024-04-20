@@ -1,0 +1,18 @@
+
+<div class="ProductContainer">
+  <a href="{{ collection.url }}">
+    <div class="ProductContainer__CollectionImg">
+      <img src="{{ collection.featured_image| img_url: 'master' }}" alt="{{ collection.title }}">
+    </div>
+    <h3>{{ collection.title }}</h3>
+    <ul class="ProductContainer__ProductListWrapper">
+      {% for product in collection.products %}
+        <li class="ProductContainer__ProductList">
+          <a href="{{ product.url }}">
+            {{ product.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </a>
+</div>

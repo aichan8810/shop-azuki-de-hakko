@@ -1,0 +1,26 @@
+.ShowProduct__Container{
+  max-width: 1482.2px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 355px);
+  gap: 10px;
+  width: 77.198vw;
+  place-content: center;
+}
+.ProductContainer{
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ProductContainer__CollectionImg{
+  aspect-ratio: 1/1;
+}
+.ProductContainer__CollectionImg > img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.ProductContainer__ProductList{
+  list-style-type: disc;
+}
