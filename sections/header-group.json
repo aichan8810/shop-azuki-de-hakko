@@ -43,18 +43,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "section_banner_jjdxna": {
-      "type": "section-banner",
-      "settings": {
-        "CampaignBanner__img": "shopify:\/\/shop_images\/57.png",
-        "CampaignBanner__Link": "shopify:\/\/collections\/ギフト"
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "section_banner_jjdxna"
+    "header"
   ]
 }

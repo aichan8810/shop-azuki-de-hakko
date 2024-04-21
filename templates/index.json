@@ -117,6 +117,13 @@
       "type": "section-mail-magazine",
       "settings": {
       }
+    },
+    "section_banner_M9q4NM": {
+      "type": "section-banner",
+      "settings": {
+        "CampaignBanner__img": "shopify:\/\/shop_images\/57.png",
+        "CampaignBanner__Link": "shopify:\/\/collections\/ギフト"
+      }
     }
   },
   "order": [
@@ -124,6 +131,7 @@
     "section_about_banner_CU6b9f",
     "section_column_list_gHU34g",
     "section_news_list_rdVQTm",
-    "section_mail_magazine_Nid3Yy"
+    "section_mail_magazine_Nid3Yy",
+    "section_banner_M9q4NM"
   ]
 }
