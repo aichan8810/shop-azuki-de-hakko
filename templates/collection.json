@@ -34,16 +34,16 @@
     "section_column_list_mpBwaC": {
       "type": "section-column-list",
       "blocks": {
-        "collection_qmFmt6": {
-          "type": "collection",
-          "settings": {
-            "ColumnList__CollectionContents": "あんスプレッド"
-          }
-        },
         "collection_n8hiNF": {
           "type": "collection",
           "settings": {
             "ColumnList__CollectionContents": "ようかん"
+          }
+        },
+        "collection_qmFmt6": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "あんスプレッド"
           }
         },
         "collection_3PCnRQ": {
@@ -66,14 +66,15 @@
         },
         "collection_NHmBtJ": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "ColumnList__CollectionContents": "飲-料"
           }
         }
       },
       "block_order": [
-        "collection_qmFmt6",
         "collection_n8hiNF",
+        "collection_qmFmt6",
         "collection_3PCnRQ",
         "collection_cLVP3q",
         "collection_WXeDrf",
