@@ -57,26 +57,28 @@
             "ColumnList__CollectionContents": "ようかん"
           }
         },
-        "collection_fpbPcN": {
-          "type": "collection",
-          "settings": {
-            "ColumnList__CollectionContents": "あんスプレッド"
-          }
-        },
         "collection_GBfmBj": {
           "type": "collection",
           "settings": {
             "ColumnList__CollectionContents": "グラノーラ"
           }
         },
+        "collection_fpbPcN": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "あんスプレッド"
+          }
+        },
         "collection_gbpfE4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "ColumnList__CollectionContents": "和菓子"
           }
         },
         "collection_8m3cfL": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "ColumnList__CollectionContents": "飲-料"
           }
@@ -90,8 +92,8 @@
       },
       "block_order": [
         "collection_YfLrGU",
-        "collection_fpbPcN",
         "collection_GBfmBj",
+        "collection_fpbPcN",
         "collection_gbpfE4",
         "collection_8m3cfL",
         "collection_KJiLLR"
