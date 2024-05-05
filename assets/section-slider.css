@@ -36,7 +36,7 @@ p{
   margin: 0;
 }
 .Mainvisual__TextContainer{
-  max-width: 396px;
+  width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ p{
 }
 
 .MainVisual__Title{
-  font-size: 24px;
+  font-size: clamp(17px,1.6666666666666667vw,24px);
   font-weight: bold;
   margin: 0;
 }

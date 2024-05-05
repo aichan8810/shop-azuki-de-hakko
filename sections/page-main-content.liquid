@@ -31,8 +31,11 @@
                   {{ block.settings.PageMainContent__SectionSubTitle }}
                 </span>
             {% endif %}
-            <h2 class="PageMainContent__SectionTitle">
+            <h2 class="PageMainContent__SectionTitle view-pc">
               {{ block.settings.PageMainContent__SectionTitle | newline_to_br }}
+            </h2>
+            <h2 class="PageMainContent__SectionTitle view-sp">
+              {{ block.settings.PageMainContent__SectionTitle--sp | newline_to_br }}
             </h2>
           </div>
       {% when "richtext" %}
@@ -59,8 +62,11 @@
                 {{ block.settings.PageMainContent__InterviewSubTitle }}
               </span>
             {% endif %}
-            <h2 class="PageMainContent__SectionTitle">
+            <h2 class="PageMainContent__SectionTitle view-pc">
               {{ block.settings.PageMainContent__InterviewTitle | newline_to_br }}
+            </h2>
+            <h2 class="PageMainContent__SectionTitle view-sp">
+              {{ block.settings.PageMainContent__InterviewTitle--sp | newline_to_br }}
             </h2>
           </div>
           <div class="PageMainContent__FlexContainer section-{{ section.id }}-padding {% if block.settings.PageMainContent__InterviewFlexheading == true %} PageMainContent__FlexContainer--rev {% endif %}" data-flex>
@@ -79,8 +85,11 @@
                 {{ block.settings.PageMainContent__InnerSectionSubTitle }}
               </span>
           {% endif %}
-          <h2 class="PageMainContent__SectionTitle">
+          <h2 class="PageMainContent__SectionTitle view-pc">
             {{ block.settings.PageMainContent__InnerSectionTitle | newline_to_br }}
+          </h2>
+          <h2 class="PageMainContent__SectionTitle view-sp">
+            {{ block.settings.PageMainContent__InnerSectionTitle--sp | newline_to_br }}
           </h2>
         </div>
         <div
@@ -166,6 +175,11 @@
           "type": "textarea",
           "id": "PageMainContent__SectionTitle",
           "label": "タイトル"
+        },
+        {
+          "type": "textarea",
+          "id": "PageMainContent__SectionTitle--sp",
+          "label": "タイトルSP"
         }
       ]
     },
@@ -222,6 +236,11 @@
           "label": "タイトル"
         },
         {
+          "type": "textarea",
+          "id": "PageMainContent__InterviewTitle--sp",
+          "label": "タイトルSP"
+        },
+        {
           "type": "checkbox",
           "id": "PageMainContent__InterviewFlexheading",
           "label": "PC時のセクションの順番"
@@ -253,6 +272,11 @@
           "type": "textarea",
           "id": "PageMainContent__InnerSectionTitle",
           "label": "タイトル"
+        },
+        {
+          "type": "textarea",
+          "id": "PageMainContent__InnerSectionTitle--sp",
+          "label": "タイトルSP"
         },
         {
           "type": "checkbox",

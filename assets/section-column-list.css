@@ -23,9 +23,8 @@ p{
 .ColumnList__Content, .ColumnList__Content > a{
   flex-direction: column;
   width: 100%;
-  justify-content: center;
   gap: 15px;
-  align-items: center;
+  display: flex;
 }
 
 .ColumnList__Content > a > img{
@@ -47,10 +46,11 @@ p{
 
 @media(max-width: 767px){
   .ColumnList__ColumnContainer{
-    width: 87.674vw;
-    grid-template-columns: repeat(auto-fill, 230px);
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 41.86046511627907vw);
+    gap: 15px;
   }
   .ColumnList__Content{
-    width: 230px;
+    width: 41.86046511627907vw;
   }
   }

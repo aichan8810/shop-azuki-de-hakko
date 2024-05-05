@@ -26,7 +26,7 @@
 }
 
 .PageMainContent__SectionTitle{
-  font-size: clamp(24px,1.563vw,30px);
+  font-size: clamp(23px,1.563vw,30px);
   font-weight: 700;
   color: black;
   line-height: 1.8;
@@ -137,8 +137,19 @@ picture > img{
   object-fit: cover;
 }
 
+.view-sp{
+  display: none;
+}
+
 
 @media(max-width: 990px){
+  .view-sp{
+    display: block;
+  }
+  .view-pc{
+    display: none;
+  }
+
   .PageMainContent__FlexContainer{
     flex-direction: column;
     align-items: center;
@@ -160,11 +171,11 @@ picture > img{
   }
   .PageMainContent__InterviewContainer > *, .PageMainContent__TitleWrapper{
     max-width: none;
-    width: 84.186%;
+    width: 91.53846153846153%;
   }
   .PageMainContent__InnerFlexContainer{
     flex-direction: column-reverse;
-    width: 84.186%;
+    width: 91.53846153846153%;
   }
   .PageMainContent__InnerFlexImgWrapper{
     width: 100% !important;
