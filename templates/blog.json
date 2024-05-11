@@ -23,6 +23,7 @@
     },
     "section_mail_magazine_F4bWjY": {
       "type": "section-mail-magazine",
+      "disabled": true,
       "settings": {
       }
     }

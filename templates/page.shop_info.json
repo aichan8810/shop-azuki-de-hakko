@@ -16,6 +16,7 @@
     },
     "section_mail_magazine_c9paaa": {
       "type": "section-mail-magazine",
+      "disabled": true,
       "settings": {
       }
     }
