@@ -35,28 +35,22 @@
     "section_product_all_inipKM": {
       "type": "section-product-all",
       "blocks": {
-        "collection_7NdB3X": {
-          "type": "collection",
-          "settings": {
-            "collection": "あんスプレッド"
-          }
-        },
         "collection_CAkNBi": {
           "type": "collection",
           "settings": {
             "collection": "ようかん"
           }
         },
-        "collection_NrLECj": {
-          "type": "collection",
-          "settings": {
-            "collection": "ギフト"
-          }
-        },
         "collection_ENmrbV": {
           "type": "collection",
           "settings": {
             "collection": "グラノーラ"
+          }
+        },
+        "collection_7NdB3X": {
+          "type": "collection",
+          "settings": {
+            "collection": "あんスプレッド"
           }
         },
         "collection_jJq667": {
@@ -67,18 +61,25 @@
         },
         "collection_tHEBrL": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "飲-料"
+          }
+        },
+        "collection_NrLECj": {
+          "type": "collection",
+          "settings": {
+            "collection": "ギフト"
           }
         }
       },
       "block_order": [
-        "collection_7NdB3X",
         "collection_CAkNBi",
-        "collection_NrLECj",
         "collection_ENmrbV",
+        "collection_7NdB3X",
         "collection_jJq667",
-        "collection_tHEBrL"
+        "collection_tHEBrL",
+        "collection_NrLECj"
       ],
       "settings": {
         "background": "#d7b59d",
