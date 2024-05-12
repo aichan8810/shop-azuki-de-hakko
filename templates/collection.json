@@ -40,22 +40,16 @@
             "ColumnList__CollectionContents": "ようかん"
           }
         },
-        "collection_qmFmt6": {
-          "type": "collection",
-          "settings": {
-            "ColumnList__CollectionContents": "あんスプレッド"
-          }
-        },
-        "collection_3PCnRQ": {
-          "type": "collection",
-          "settings": {
-            "ColumnList__CollectionContents": "ギフト"
-          }
-        },
         "collection_cLVP3q": {
           "type": "collection",
           "settings": {
             "ColumnList__CollectionContents": "グラノーラ"
+          }
+        },
+        "collection_qmFmt6": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "あんスプレッド"
           }
         },
         "collection_WXeDrf": {
@@ -66,18 +60,25 @@
         },
         "collection_NHmBtJ": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "ColumnList__CollectionContents": "飲-料"
+          }
+        },
+        "collection_3PCnRQ": {
+          "type": "collection",
+          "settings": {
+            "ColumnList__CollectionContents": "ギフト"
           }
         }
       },
       "block_order": [
         "collection_n8hiNF",
-        "collection_qmFmt6",
-        "collection_3PCnRQ",
         "collection_cLVP3q",
+        "collection_qmFmt6",
         "collection_WXeDrf",
-        "collection_NHmBtJ"
+        "collection_NHmBtJ",
+        "collection_3PCnRQ"
       ],
       "settings": {
         "ColumnList__Title": "Category",
