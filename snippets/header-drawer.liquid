@@ -22,7 +22,11 @@
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
-                <li>
+                <li class="parent-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+                    <text id="_" data-name="● " transform="translate(0 9)" fill="#9e0810" font-size="10" font-family="HiraginoSans-W5, Hiragino Sans"><tspan x="0" y="0" letter-spacing="0.05em">●</tspan><tspan y="0"> </tspan></text>
+                  </svg>
+
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary
@@ -45,7 +49,7 @@
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
-                              <li>
+                              <li class="sub-menu">
                                 {%- if childlink.links == blank -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
@@ -250,6 +254,21 @@
             </ul>
           </div>
         </div>
+          <div class="menu-icon-container">
+            <a href="" class="menu-icon">
+              {% render "icon-x.liquid" %}
+            </a>
+            <a href="" class="menu-icon">
+              {% render "icon-meta.liquid" %}
+            </a>
+            <a href="" class="menu-icon">
+              {% render "icon-instagram--mono.liquid" %}
+            </a>
+            <a href="" class="menu-icon">
+              {% render "icon-line.liquid" %}
+            </a>
+          </div>
+
       </div>
     </div>
   </details>
