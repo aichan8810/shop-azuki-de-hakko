@@ -240,3 +240,35 @@ details[open].menu-opening > .menu-drawer__submenu {
     transition: none !important;
   }
 }
+
+/* custom */
+.list-menu{
+  padding-left: 8.3rem;
+}
+.parent-menu{
+  display: flex;
+  align-items: center;
+}
+.sub-menu{
+  list-style-type: disc;
+}
+.menu-icon-container{
+  position: absolute;
+  bottom: 8.6rem;
+  left: 8.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .list-menu{
+    padding-left: 4.5rem;
+  }
+  .menu-icon-container{
+    position: absolute;
+    bottom: 5.7rem;
+    left: 4.5rem;
+  }
+
+}
