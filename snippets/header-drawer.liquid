@@ -126,6 +126,27 @@
                 </li>
               {%- endfor -%}
             </ul>
+            <ul class="header-drawer-menu__fixed-menu">
+              <li class="parent-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+                  <text id="_" data-name="● " transform="translate(0 9)" fill="#9e0810" font-size="10" font-family="HiraginoSans-W5, Hiragino Sans"><tspan x="0" y="0" letter-spacing="0.05em">●</tspan><tspan y="0"> </tspan></text>
+                </svg>
+                <a href="{{ routes.account_register_url }}" class="menu-drawer__menu-item">
+                  会員登録
+                </a>
+              </li>
+
+              <li class="parent-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+                  <text id="_" data-name="● " transform="translate(0 9)" fill="#9e0810" font-size="10" font-family="HiraginoSans-W5, Hiragino Sans"><tspan x="0" y="0" letter-spacing="0.05em">●</tspan><tspan y="0"> </tspan></text>
+                </svg>
+                <a href="{{ routes.account_login_url }}" class="menu-drawer__menu-item">
+                  ログイン
+                </a>
+              </li>
+
+            </ul>
+
           </nav>
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}

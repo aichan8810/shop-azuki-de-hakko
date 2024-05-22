@@ -261,8 +261,15 @@ details[open].menu-opening > .menu-drawer__submenu {
   gap: 1.7rem;
 }
 
+.header-drawer-menu__fixed-menu{
+  padding-left: 8.3rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 500px) {
-  .list-menu{
+  .list-menu,.header-drawer-menu__fixed-menu
+  {
     padding-left: 4.5rem;
   }
   .menu-icon-container{
