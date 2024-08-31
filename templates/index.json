@@ -39,13 +39,21 @@
             "Slider__ContentImage": "shopify:\/\/shop_images\/mv_3.jpg",
             "Slider__ContentLink": ""
           }
+        },
+        "text_EckXPf": {
+          "type": "text",
+          "settings": {
+            "Slider__ContentImage": "shopify:\/\/shop_images\/20240130_094_S.jpg",
+            "Slider__ContentLink": ""
+          }
         }
       },
       "block_order": [
         "text_T4aG4E",
         "text_xWz86Y",
         "text_XV7nkP",
-        "text_KjgY8p"
+        "text_KjgY8p",
+        "text_EckXPf"
       ],
       "custom_css": [
 
