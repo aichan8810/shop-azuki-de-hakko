@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "section_slider_HdAq6e": {
@@ -10,25 +19,33 @@
             "Slider__ContentLink": ""
           }
         },
+        "text_xWz86Y": {
+          "type": "text",
+          "settings": {
+            "Slider__ContentImage": "shopify:\/\/shop_images\/20240711_054_fad48e1c-9ee0-405c-84de-fd26c8f6f44e.jpg",
+            "Slider__ContentLink": ""
+          }
+        },
+        "text_XV7nkP": {
+          "type": "text",
+          "settings": {
+            "Slider__ContentImage": "shopify:\/\/shop_images\/20240711_019.jpg",
+            "Slider__ContentLink": ""
+          }
+        },
         "text_KjgY8p": {
           "type": "text",
           "settings": {
             "Slider__ContentImage": "shopify:\/\/shop_images\/mv_3.jpg",
             "Slider__ContentLink": ""
           }
-        },
-        "text_URQqdi": {
-          "type": "text",
-          "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/mv_4.jpg",
-            "Slider__ContentLink": ""
-          }
         }
       },
       "block_order": [
         "text_T4aG4E",
-        "text_KjgY8p",
-        "text_URQqdi"
+        "text_xWz86Y",
+        "text_XV7nkP",
+        "text_KjgY8p"
       ],
       "custom_css": [
 
