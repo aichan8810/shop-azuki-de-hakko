@@ -66,6 +66,9 @@
     },
     "section_video_BwUAhN": {
       "type": "section-video",
+      "custom_css": [
+        ".section-template--18473253535967__section_video_BwUAhN-padding{padding: 0;}"
+      ],
       "settings": {
         "heading": "Video",
         "heading_size": "h1",
@@ -76,7 +79,7 @@
         "full_width": false,
         "color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "section_about_banner_CU6b9f": {
