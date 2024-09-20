@@ -55,6 +55,7 @@
         "text_KjgY8p",
         "text_EckXPf"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -65,7 +66,9 @@
     },
     "section_video_NJcfct": {
       "type": "section-video",
-      "disabled": true,
+      "custom_css": [
+        ".section-template--18473253535967__section_video_BwUAhN-padding {padding: 0;}"
+      ],
       "settings": {
         "heading": "Video",
         "heading_size": "h1",
