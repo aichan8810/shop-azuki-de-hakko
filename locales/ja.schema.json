@@ -3373,6 +3373,29 @@
           }
         }
       }
+    },
+    "Slideshow": {
+      "name": "カスタムスライドショー",
+      "blocks": {
+        "slide": {
+          "name": "スライド",
+          "settings": {
+            "image":{
+              "name": "画像"
+            },
+            "image_sp":{
+              "name": "SP用画像"
+            },
+            "title": {
+              "label": "タイトル"
+            },
+            "text": {
+              "label": "説明文"
+            }
+          }
+        }
+      }
+
     }
   }
 }

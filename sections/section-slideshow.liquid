@@ -1,0 +1,67 @@
+<section class="Slideshow" id="Slideshow-{{ section.id }}">
+  <div class="Slideshow__Container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="Slideshow__ImageWrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                <img src="{{ block.settings.image_sp | img_url: 'master' }}" alt="{{ block.settings.title }}">
+              </picture>
+            </div>
+            <div class="Slideshow__TextWrapper">
+              <h1>
+                  {{ block.settings.title | escape }}
+              </h1>
+              <p>
+                {{ block.settings.text | newline_to_br }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.Slideshow.name",
+  "settings": [
+
+    ],
+  "blocks": [
+    {
+      "name": "t:sections.Slideshow.blocks.slide.name",
+      "type": "image_picker",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.Slideshow.blocks.slide.settings.image.name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_sp",
+          "label": "t:sections.Slideshow.blocks.slide.settings.image.name"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.Slideshow.blocks.slide.settings.title.label"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.Slideshow.blocks.slide.settings.text.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
