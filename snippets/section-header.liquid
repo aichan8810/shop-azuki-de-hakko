@@ -1,0 +1,14 @@
+<section class="SectionHeader">
+  <div class="Container page-width SectionHeader__Container HeaderAlignment__{{ alignment }}">
+    {% if title != blank %}
+        <{{ heading_level }} class="SectionHeader__title">
+          title
+        </{{ heading_level }}>
+    {% endif %}
+    {% if content != blank %}
+      <div class="SectionHeader__Content">
+        {{ content | newline_to_br }}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.BlogColumns__Container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+
+@media screen and (max-width: 640px) {
+  .BlogColumns__Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 3rem;
+  }
+}
