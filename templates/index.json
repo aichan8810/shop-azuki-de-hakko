@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_slider_HdAq6e": {
@@ -15,35 +15,35 @@
         "text_T4aG4E": {
           "type": "text",
           "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/20240130_027_S.jpg",
+            "Slider__ContentImage": "shopify://shop_images/20240130_027_S.jpg",
             "Slider__ContentLink": ""
           }
         },
         "text_xWz86Y": {
           "type": "text",
           "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/20240711_054_fad48e1c-9ee0-405c-84de-fd26c8f6f44e.jpg",
+            "Slider__ContentImage": "shopify://shop_images/20240711_054_fad48e1c-9ee0-405c-84de-fd26c8f6f44e.jpg",
             "Slider__ContentLink": ""
           }
         },
         "text_XV7nkP": {
           "type": "text",
           "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/20240711_019.jpg",
+            "Slider__ContentImage": "shopify://shop_images/20240711_019.jpg",
             "Slider__ContentLink": ""
           }
         },
         "text_KjgY8p": {
           "type": "text",
           "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/mv_3.jpg",
+            "Slider__ContentImage": "shopify://shop_images/mv_3.jpg",
             "Slider__ContentLink": ""
           }
         },
         "text_EckXPf": {
           "type": "text",
           "settings": {
-            "Slider__ContentImage": "shopify:\/\/shop_images\/20240130_094_S.jpg",
+            "Slider__ContentImage": "shopify://shop_images/20240130_094_S.jpg",
             "Slider__ContentLink": ""
           }
         }
@@ -73,8 +73,8 @@
         "heading": "Video",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/525747415844651475.MP4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify://files/videos/525747415844651475.MP4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
         "color_scheme": "",
@@ -88,8 +88,8 @@
         "AboutBanner__Title": "AZUKI\nde\nHAKKO\nの想い",
         "AboutBanner__LinkTitle": "Read More",
         "AboutBanner__Text": "135年間小豆と米麹を扱い続けてきた「越山甘清堂」が、独自製法で小豆を醸したら、全く新しい発酵新分野が誕生しました。小豆麹の力を様々なカタチへと展開するブランドが「Azuki de Hakko」です。無添加なのに、さらに美味しく、もっと健康に。発酵の新世界へ、ようこそ。",
-        "AboutBanner__Link": "shopify:\/\/pages\/about",
-        "AboutBanner__Image": "shopify:\/\/shop_images\/17.png"
+        "AboutBanner__Link": "shopify://pages/about",
+        "AboutBanner__Image": "shopify://shop_images/17.png"
       }
     },
     "section_column_list_gHU34g": {
@@ -162,8 +162,20 @@
     "section_banner_M9q4NM": {
       "type": "section-banner",
       "settings": {
-        "CampaignBanner__img": "shopify:\/\/shop_images\/57.png",
-        "CampaignBanner__Link": "shopify:\/\/collections\/ギフト"
+        "CampaignBanner__img": "shopify://shop_images/57.png",
+        "CampaignBanner__Link": "shopify://collections/ギフト"
+      }
+    },
+    "section_blog_column_DNcRta": {
+      "type": "section-blog-column",
+      "settings": {
+        "header_alignment": "center",
+        "header-title": "",
+        "heading_level": "h2",
+        "header-content": "",
+        "blog": "news",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -174,6 +186,7 @@
     "section_column_list_gHU34g",
     "section_news_list_rdVQTm",
     "section_mail_magazine_Nid3Yy",
-    "section_banner_M9q4NM"
+    "section_banner_M9q4NM",
+    "section_blog_column_DNcRta"
   ]
 }
