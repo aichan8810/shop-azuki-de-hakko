@@ -1,0 +1,30 @@
+.ColumnCard__Container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.ColumnCard__ThumbnailWrapper{
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.ColumnCard__Thumbnail{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  object-fit: contain;
+}
+
+.ColumnCard__ThumbnailWrapper:hover .ColumnCard__Thumbnail{
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 640px) {
+  .ColumnCard__ThumbnailWrapper:hover .ColumnCard__Thumbnail{
+    transform: none;
+  }
+}
