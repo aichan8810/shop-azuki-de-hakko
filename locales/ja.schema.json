@@ -3404,6 +3404,44 @@
           }
         }
       }
+    },
+    "BlogColumn":{
+      "name": "コラムセクション",
+      "settings": {
+        "section-header": {
+          "alignment":{
+            "label": "ヘッダーのコンテンツアラインメント",
+            "options":{
+              "center": {
+                "label": "中央よせ"
+              },
+              "left": {
+                "label": "左よせ"
+              }
+            }
+          },
+          "title":{
+            "label": "タイトルを入力"
+          },
+          "heading_level": {
+            "label": "タイトルの種別を選択",
+            "options": {
+              "level_page_title":{
+                "label": "ページタイトル"
+              },
+              "level_section_title":{
+                "label": "セクションタイトル"
+              }
+            }
+          },
+          "content": {
+            "label": "コンテンツを入力"
+          }
+        },
+        "blog": {
+          "label": "表示するブログを選択"
+        }
+      }
     }
   }
 }

@@ -1,4 +1,18 @@
+:root{
+  --base-text: 1.6rem;
+  --base-text-line-height: 1.8;
+  --base-text-weight: 400;
+  --base-text-letter-spacing: .05em
+}
 .BaseInnerWidth{
   width: 10rem;
   margin: 0 auto;
+}
+
+
+.BaseText{
+  font-size: var(--base-text);
+  line-height: var(--base-text-line-height);
+  letter-spacing: var(--base-text-letter-spacing);
+  font-weight: var(--base-text-weight);
 }

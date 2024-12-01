@@ -162,6 +162,18 @@
         "CampaignBanner__img": "shopify://shop_images/57.png",
         "CampaignBanner__Link": "shopify://collections/ギフト"
       }
+    },
+    "section_blog_column_DNcRta": {
+      "type": "section-blog-column",
+      "settings": {
+        "header_alignment": "center",
+        "header-title": "",
+        "heading_level": "h2",
+        "header-content": "",
+        "blog": "column",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -171,6 +183,7 @@
     "section_column_list_gHU34g",
     "section_news_list_rdVQTm",
     "section_mail_magazine_Nid3Yy",
-    "section_banner_M9q4NM"
+    "section_banner_M9q4NM",
+    "section_blog_column_DNcRta"
   ]
 }

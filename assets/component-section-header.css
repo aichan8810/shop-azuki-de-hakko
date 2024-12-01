@@ -1,0 +1,42 @@
+.SectionHeader__Container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* コンテンツアラインメント */
+.HeaderAlignment__center{
+  align-items: center;
+}
+.HeaderAlignment__left{
+  align-items: left;
+}
+
+/* リッチテキスト内のCSS */
+.SectionHeader__title, .SectionHeader__Content > *{
+  margin: 0;
+  padding: 0;
+}
+.SectionHeader__title{
+  letter-spacing: .05em;
+  line-height: 1.8;
+}
+.SectionHeader__Content p, .SectionHeader__Content li{
+  font-size: var(--base-text);
+  line-height: var(--base-text-line-height);
+  letter-spacing: var(--base-text-letter-spacing);
+  font-weight: var(--base-text-weight);
+}
+.SectionHeader__Content h2{
+  font-size: calc(var(--base-text) + 4px);
+  line-height: var(--base-text-line-height);
+  letter-spacing: var(--base-text-letter-spacing);
+  font-weight: var(--base-text-weight);
+}
+.SectionHeader__Content h3{
+  font-size: calc(var(--base-text) + 2px);
+  line-height: var(--base-text-line-height);
+  letter-spacing: var(--base-text-letter-spacing);
+  font-weight: var(--base-text-weight);
+}
