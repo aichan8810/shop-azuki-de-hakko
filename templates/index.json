@@ -141,7 +141,8 @@
         "collection_KJiLLR"
       ],
       "settings": {
-        "ColumnList__Title": "Category"
+        "ColumnList__Title": "Category",
+        "ColumnList__Length": 5
       }
     },
     "section_news_list_rdVQTm": {
