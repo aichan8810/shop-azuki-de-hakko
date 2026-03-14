@@ -113,6 +113,7 @@
         },
         "collection_gbpfE4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "ColumnList__CollectionContents": "和菓子"
           }
